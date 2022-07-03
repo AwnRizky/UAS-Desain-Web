@@ -1,0 +1,3167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+</head>
+
+<body>
+
+  <!-- import jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+  <header>
+
+    <!-- Navbar -->
+
+    <nav class="py-3 navbar navbar-dark navbar-expand-md fixed-top" style="background-color: #00adb5 ;">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img width="40" height="40" src="image/logo.png" alt="">
+            <span class="title">LLC - LIBRARY</span>
+          </a>
+        </div>
+
+        <button data-bs-toggle="collapse" data-bs-target="#main-menu" type="button" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span class="textHome">HOME</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Catalog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#agamaCat">Agama & Spiritualitas</a></li>
+                <li><a class="dropdown-item" href="#fiksiCat">Fiksi</a></li>
+                <li><a class="dropdown-item" href="#komikCat">Komik & Novel Grafis</a></li>
+                <li><a class="dropdown-item" href="#motivCat">Motivasi & Pengembangan Diri</a></li>
+                <li><a class="dropdown-item" href="#nonfikCat">Non Fiksi</a></li>
+                <li><a class="dropdown-item" href="#sainsCat">Sains & Teknologi</a></li>
+                <li><a class="dropdown-item" href="#sastraCat">Sastra & Filsafat</a></li>
+                <li><a class="dropdown-item" href="#sejaCat">Sejarah</a></li>
+                <li><a class="dropdown-item" href="#seniCat">Seni & Desain</a></li>
+                <li><a class="dropdown-item" href="#sosCat">Sosial & Politik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Review
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#agamaRev">Agama & Spiritualitas</a></li>
+                <li><a class="dropdown-item" href="#fiksiRev">Fiksi</a></li>
+                <li><a class="dropdown-item" href="#komikRev">Komik & Novel Grafis</a></li>
+                <li><a class="dropdown-item" href="#motivRev">Motivasi & Pengembangan Diri</a></li>
+                <li><a class="dropdown-item" href="#nonfikRev">Non Fiksi</a></li>
+                <li><a class="dropdown-item" href="#sainsRev">Sains & Teknologi</a></li>
+                <li><a class="dropdown-item" href="#sastraRev">Sastra & Filsafat</a></li>
+                <li><a class="dropdown-item" href="#sejaRev">Sejarah</a></li>
+                <li><a class="dropdown-item" href="#seniRev">Seni & Desain</a></li>
+                <li><a class="dropdown-item" href="#sosRev">Sosial & Politik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="icons-home mt-2 mt-lg-0 mx-auto">
+            <a href="#"><i class='bx bxs-user'></i></a>
+            <a href="#"><i class='bx bx-bookmark'></i></a>
+          </div>
+
+        </div>
+
+        <div class="d-none d-lg-block">
+          <form class="d-flex" role="search" action="">
+            <input class="form-control me-2" type="search" placeholder="Search By Book Name" aria-label="Search">
+            <input class="btn btn-outline-light" type="submit" value="Search" aria-label="search">
+          </form>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <!-- Quotes dan Gambar -->
+
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="quotes1">Reading is an exercise in empathy; <br> an exercise in walking in someone else’s <br>
+              shoes for a while
+            </h3>
+            <p class="subQuotes">- Malorie Blackman -</p>
+            <div class="btn-home btn-outline-light">
+              <a href="#categories" class="btn btn-read tombol1">Read Now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <img class="img-fluid position-absolute w-75 end-0 d-none d-lg-block" src="image/Reading Girl 1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <!-- Categories -->
+
+    <section class="categories section-margin pt-5" id="categories">
+      <div class="container pt-4">
+        <div class="row mt-1">
+          <div class="col text-center">
+            <h3 class="headingCate"><span class="garis1"> - - - - </span><a href="#" class="cate">C A T E G O R I E
+                S</a><span class="garis1"> - - - - </span></h3>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-lg-6 populer">
+            <h4 class="popCate">Categories</h4>
+          </div>
+          <div class="col-lg-6 geser">
+            <div class="toggle-slider d-flex justify-content-end">
+              <i class='bx bxs-chevron-left-circle'></i>
+              <i class='bx bxs-chevron-right-circle'></i>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 categories">
+          <div class="col">
+
+            <div class="swiper myCate">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/agama/dakwah-Itu....-Cinta.jpg" alt="buku1" class="buku-1 w-50">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Agama & Spiritualitas
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#agamaCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/fiksi/Crazy_Ketos_Vs_Ice_Waketos.jpg" alt="buku1" class="buku-1"
+                      style="width: 52%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Fiksi
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#fiksiCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/komik/akasha_CITY_HUNTER.jpg" alt="buku1" class="buku-1" style="width: 51%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Komik
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#komikCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/motivasi/Berapa_Harga_Nyawa hari ini.png" alt="buku1" class="buku-1"
+                      style="width: 51%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Motivasi & Pengembangan
+                          Diri
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#motivCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/non fiksi/mengubah hobi.jpg" alt="buku1" class="buku-1" style="width: 48.5%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Non Fiksi
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#nonfikCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/sains/36_Jam_Belajar_Komputer_Microsoft_Office_2021.jpg" alt="buku1" class="buku-1"
+                      style="width: 49.5%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Sains & Teknologi
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#sainsCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/sastra/_Fantasmagoria_.jpg" alt="buku1" class="buku-1 w-50">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Sastra & Filsafat
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#sastraCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/sejarah/=Para-Pembentuk-Peradaban-Islam--Seribu-Tahun-Pertama.jpg" alt="buku1"
+                      class="buku-1" style="width: 48.5%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Sejarah
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#sejaCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/seni/_750-Smtowns-Awesome-Facts.jpg" alt="buku1" class="buku-1" style="width: 53%;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Seni & Desain
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#seniCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card-categories">
+                  <div class="img-box rounded-3 d-flex justify-content-center align-items-center py-3 px-2">
+                    <img src="image/sosial/Bhayangkara Polantas.jpg" alt="buku1" class="buku-1" style="width: 51% ;">
+                  </div>
+                  <div class="detail-product">
+                    <div class="info d-flex justify-content-center align-items-center px-2">
+                      <p class="label text-center d-flex"> <a href="#" class="tipe d-flex px-1"> Sosial & Politik
+                        </a></p>
+                    </div>
+                    <div class="btn-card d-flex justify-content-center">
+                      <a href="#sosCat" class="btn butCat"> <i class='bx bx-book-open'></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+
+    <section class="categories section-margin pt-5" id="agamaCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Agama & Spiritualitas</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color:#00adb5 ;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/14_Bukti_Roh_Kudus_Adalah_Allah.jpg" width="61%" class="img-fluid pt-1" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">14 Bukti Roh Kudus</h5>
+                <p class="card-text">Penulis : Lukas Kuswanto <br> Penerbit : Andi Offset <br> Tahun terbit : 2021 </p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/dakwah dan filantropi.jpg" width="64.5%" class="img-fluid pt-1" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dakwah dan Filantropi</h5>
+                <p class="card-text">Penulis : Prof. Dr. Murodi <br> Penerbit : Prenada Media <br> Tahun terbit : 2022
+                </p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/dakwah-Itu....-Cinta.jpg" width="64.2%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dakwah itu... Cinta</h5>
+                <p class="card-text">Penulis : Muh. Ramli <br> Penerbit : Elex Media Komputindo <br> Tahun terbit : 2019
+                </p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/Makrifat_Auliya.jpg" width="61.3%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Makrifat Auliya</h5>
+                <p class="card-text">Penulis : Muhammad Khalid Tsabit <br> Penerbit : QAF MEDIA KREATIVA <br> Tahun
+                  terbit : 2020</p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/Membentuk Rancangan Beralih Dari Teks Kepada Khotbah.jpg" width="75%"
+                  class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Membentuk Rancangan</h5>
+                <p class="card-text">Penulis : Marvin A. McMickle <br> Penerbit : BPK Gunung Mulia <br> Tahun terbit :
+                  2017</p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/raja namrud.jpg" width="72.5%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Raja Namrud</h5>
+                <p class="card-text">Penulis : Prof. Dr. Murodi <br> Penerbit : Prenada Media <br> Tahun terbit : 2022.
+                </p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/sabar, syukur, dan ikhlas.jpg" width="77%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sabar, Syukur dan Ikhlas</h5>
+                <p class="card-text">Penulis : Retno D.N. <br> Penerbit : Anak Hebat Indonesia <br> Tahun terbit : 2022.
+                </p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap">
+            <div class="card cat-card" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/agama/salat ontime karena mati anytime.jpg" width="66.5%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Salat on Time Karena Mati Any Time</h5>
+                <p class="card-text">Penulis : Saefudin Zuhri <br> Penerbit : Elex Media Komputindo <br> Tahun terbit :
+                  2022</p>
+                <a href="#agamaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="agamaRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/agama/14_Bukti_Roh_Kudus_Adalah_Allah.jpg" alt="testi img">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a" id="1-1"
+                  data-img="image/agama/14_Bukti_Roh_Kudus_Adalah_Allah.jpg">
+                  <h3>14 Bukti Roh Kudus Adalah Allah - <span>Lukas Kuswanto</span></h3>
+                  <p>Banyak orang sering mempertanyakan tentang konsep Alla h dalam kekristenan. Tak terkecuali dari
+                    kalangan orang percaya, terkadang juga memiliki banyak pertanyaan. Salah satunya terkait dengan
+                    pribadi Roh Kudus, dengan pertanyaan kunci: "Benarkah Roh Kudus adalah Allah?"
+                    <br><br>
+                    Inilah yang hendak dijelaskan oleh Penulis dalam buku 14 Bukti Roh Kudus Adalah Allah. Buku ini akan
+                    memaparkan 14 bukti bahwa Roh Kudus adalah Allah dilihat dari pribadi-Nya, karya-karya-Nya pada masa
+                    lampau, pada masa penciptaan, pada dunia Perjanjian Lama, karya-Nya pada masa Perjanjian Baru,
+                    bahkan karya-Nya pada masa yang akan datang hingga pada masa kekekalan.
+                    <br><br>
+                    Buku ini akan sangat menolong Anda untuk lebih memahami tentang konsep Allah Tritunggal—secaro
+                    khusus dalam pribadi Roh Kudus— yang tidak dapat dipisahkan. Buku ini juga akan membekali Anda
+                    dengan pengetahuan yang baik, juga dapat menolong Anda untuk menjawab pertanyaan-pertanyaan terkait
+                    pribadi Roh Kudus. Selamat membaca dan bertumbuh dalam pengetahuan yang mendalam tentang pribadi
+                    Allah Tritunggal.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" id="1-2"
+                  data-img="image/agama/dakwah dan filantropi.jpg">
+                  <h3>Dakwah & Filantropi - <span>Prof. Dr. Murodi</span></h3>
+                  <p>Dakwah dan Filantropi: Jalan Menuju Kesejahteraan Umat merupakan refleksi pemikiran yang
+                    penulisannya telah dipersiapkan sejak lama. Terdapat beberapa alasan mengapa karya ini perlu
+                    diterbitkan. Pertama, karya tulis ini merupakan salah satu jawaban pertanyaan yang sering muncul
+                    dalam benak penulis, mengapa dakwah selama ini kurang menyentuh inti persoalan umat Islam di
+                    Indonesia, terutama soal kesejahteraan, keadilan, dan lain-lain. Padahal, banyak aktivitas dan
+                    lembaga dakwah berdiri di tanah air ini. Kedua, tampaknya ada simplifikasi pemahaman dakwah, bahwa
+                    dakwah hanya sebatas aktivitas di atas podium, bukan aktivitas agama dan sosial yang menyentuh
+                    problem utama umat di Indonesia.
+                    <br><br>
+                    Menjawab permasalahan di atas, buku ini menawarkan salah satu model dakwah terbaik saat ini, yaitu
+                    melalui berbagai pendekatan, seperti pendekatan filantropis. Selama ini dakwah terfokus hanya pada
+                    aktivitas spiritual, mengajak umat untuk memperkukuh keimanan dan keislaman saja. Bukan atau tidak
+                    memberikan solusi atas persoalan yang dihadapi umat Islam Indonesia, seperti kemiskinan,
+                    ketidakadilan, dan lain-lain. Dakwah harus mampu membangun paradigma baru bahwa dakwah tidak hanya
+                    mengajak umat untuk berbuat baik, tetapi juga memberi contoh dengan bertindak secara konkret agar
+                    dakwah berhasil melakukan transformasi sosial dan keimanan umat.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" id="1-3"
+                  data-img="image/agama/dakwah-Itu....-Cinta.jpg">
+                  <h3>Dakwah Itu.... Cinta - <span>Muh. Ramli</span></h3>
+                  <p>Apa yang akan terlintas dalam pikiran kita jika mendengar kata dakwah? Mengajak, menyeru,
+                    merangkul, menasihati, ataukah menceramahi? Dakwah bukanlah sesuatu yang membosankan yang hanya bisa
+                    dilakukan di depan mimbar atau di majelis-majelis pengajian, ia bisa dilakukan kapan pun dan di mana
+                    pun tanpa harus dibungkus dengan sesuatu yang membosankan dan dipenuhi dengan nasihat tentang surga
+                    dan neraka. Dakwah itu cinta. Cinta yang akan mengantarkan kita pada keridaan dan rahmat Allah
+                    taala. Cinta yang akan membuka mata dan pikiran kita betapa indahnya Islam dengan syariat-Nya. Cinta
+                    yang akan menyadarkan kita bahwa Allah begitu sayang dan betapa rindunya Rasulullah untuk bertemu
+                    dengan kita.
+                    <br><br>
+                    Buku ini menjabarkan tentang bagaimana seharusnya kita berdakwah, sehingga mudah diterima oleh orang
+                    yang kita dakwahi. Dilengkapi dengan kisah inspiratif dari para generasi terbaik dan mengajak kita
+                    untuk mengintrospeksi diri sehingga menjadi lebih baik. Serta mengajak kita untuk lebih memahami
+                    hakikat dakwah. Diramu dengan bahasa yang lugas dan tidak menggurui.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" id="1-4" data-img="image/agama/Makrifat_Auliya.jpg">
+                  <h3>Makrifat Auliya - <span>Muhammad Khalid Tsabit</span></h3>
+                  <p>Inilah mutiara hikayat dan nasihat para kekasih Allah, para penghias dan pengharum dunia, peneduh
+                    dari terik matahari waktu, sekaligus penebar rahmat bagi para hamba-Nya setelah Dia mengutus Nabi
+                    Penutup Muhammad saw. Mereka tak lain adalah pewaris dan pengikut sunnahnya.
+                    <br><br>
+                    Membaca buku ini kita serasa tengah berguru. Berguru untuk mereguk pengetahuan, kearifan, dan
+                    teladan kehidupan kepada para syekh dan imam dari berbagai zaman dan dari berbagai penjuru dunia
+                    Islam—dari klasik hingga modern; dari Baghdad hingga Turki, dari Damaskus hingga Maroko; dari Bisyr
+                    al-Hâfî hingga Ahmad Zainî Dahlân; dari Imam al-Ghazâlî hingga Ibnu ‘Athâ’illah al-Sakandarî.
+                    “Kupersembahkan 82 petuah dari 60 ulama yang walau hanya menyebutkan namanya saja insya-Allah Dia
+                    akan melimpahkan rahmat dan kesembuhan bagi kita,” tutur sang penulis. Hidup mereka penuh kasih
+                    sayang dan paling bermanfaat bagi sesama
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" id="1-5"
+                  data-img="image/agama/Membentuk Rancangan Beralih Dari Teks Kepada Khotbah.jpg">
+                  <h3>Membentuk Rancangan : Beralih Dari Teks Kepada Khotbah - <span>Marvin A. McMickle</span></h3>
+                  <p>Membentuk Rancangan membantu pendeta menemukan inti pesan yang akan dikhotbahkan. Agar efektif,
+                    khotbah perlu membahas wawasan pendengar pada tiga tingkat yang berbeda: kepala/intelektual;
+                    hati/hasrat, keyakinan; dan respons yang diharapkan. Rancangan Khotbah adalah cara dimana khotbah
+                    melibatkan pendengar di ketiga tingkat, kadang secara sekuensial dan kadang bersamaan. Marvin
+                    Mcmickle menyajikan tiga langkah yang membantu untuk menyusun pesan semacam itu, yang ia beri nama
+                    (1) Apa yang harus dikhotbahkan? (2) Jadi apa? Dan (3) Sekarang Apa?
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"  id="1-6" data-img="image/agama/raja namrud.jpg">
+                  <h3>Raja Namrud: Diktator Pertama di Muka Bumi - <span>Manshur Abdul Hakim</span></h3>
+                  <p>Namrud merupakan salah satu tokoh dalam Al-Qur`an sebagaimana yang dikemukakan para ahli Tafsir,
+                    bahwa dialah yang dimaksud dalam kisah Nabi Ibrahim alaihissalam, ketika ia mendebat Ibrahim
+                    mengenai Tuhannya, lalu ia menghukum Ibrahim dengan membakarnya dalam api besar, lalu Allah
+                    menyelamatkan Ibrahim dari api tersebut.
+                    <br><br>
+                    Ia salah satu diktator besar yang dikenal di kalangan umat Islam dengan nama Namrud bin Kan’an.
+                    Namanya disebutkan dalam Kitab Taurat (Perjanjian Lama) di kalangan Ahli Kitab dengan sebagai raja
+                    diktator yang menantang Allah, mendirikan menara Babilonia, dan mengaitkan namanya dengan
+                    Mesopotamia Babilonia (Irak sekarang).
+                    <br><br>
+                    Demikian pula, Namrud disebut dalam berbagai literatur freemasonry dunia sebagai salah satu simbol
+                    mereka yang penting bersama istrinya. Dalam buku ini kami akan memaparkan berbagai pandangan seputar
+                    Raja Namrud dalam kitab-kitab sejarah, Al-Qur`an, dan Perjanjian Lama serta berbagai literatur
+                    bangsa-bangsa lain.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" id="1-7"
+                  data-img="image/agama/sabar, syukur, dan ikhlas.jpg">
+                  <h3>Sabar, Syukur, Dan Ikhlas: Kunci Sukses Dan Bahagia Dunia - <span>Retno D.N.</span></h3>
+                  <p>Seseorang yang berambisi dengan dunia semata, ia mungkin akan menjadikan kesuksesannya sebagai
+                    tujuan akhir hidupnya tanpa ia sadari. Sementara seseorang yang peduli terhadap dirinya untuk
+                    akhirat nanti, ia akan menjadikan rida Allah sebagai satu-satunya yang harus dicapai. Ya, keduanya
+                    harus dimiliki oleh setiap orang. Untuk kesuksesan sebagai tujuan dunia dan keridaan Allah swt
+                    sebagai tujuan akhirnya.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" id="1-8"
+                  data-img="image/agama/salat ontime karena mati anytime.jpg">
+                  <h3>Salat on Time Karena Mati Any Time - <span>Saefudin Zuhri</span></h3>
+                  <p>Jika kita akan melakukan perjalanan dengan pesawat, kita tentunya sudah mengetahui bahwa ketika
+                    boarding di bandara nanti, yang akan ditanyakan adalah paspor dan tiket pesawat. Maka kedua dokumen
+                    itu akan dipersiapkan sebaik mungkin. Jangan sampai ketinggalan, salah tiket, apalagi hilang. Karena
+                    bila itu terjadi, selain menghambat waktu, tentu juga membuat perjalanan menjadi tidak menyenangkan.
+                    Tapi bagaimana jika yang ditanyakan itu tidak dapat lagi ditawar karena memang waktunya terbatas?
+                    <br><br>
+                    Tentunya kita akan berusaha mempersiapkan ‘dokumen’ yang ditanyakan dengan sebaik-baiknya dari awal,
+                    karena jika tidak disiapkan, penderitaan abadi akan segera berlanjut. Buku Salat on Time berisikan
+                    uraian singkat namun bernas dan penuh makna sebagai pengingat kita terhadap pentingnya mengutamakan
+                    amal ibadah salat. Ibadah salat seringkali terabaikan oleh kita. Padahal ibadah salat merupakan amal
+                    yang pertama kali ditanyakan di hari kiamat kepada seorang hamba. Semoga buku ini bisa menjadi
+                    nasihat bijak untuk selalu menjaga salat kita. Selamat membaca. “Sesungguhnya amal hamba yang
+                    pertama kali akan dihisab pada hari kiamat adalah salatnya. Apabila salatnya baik, dia akan
+                    mendapatkan keberuntungan dan keselamatan. Apabila salatnya rusak, dia akan menyesal dan merugi.”
+                    (HR. Ahmad, Abu Daud dan Al-Hakim)
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="fiksiCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Fiksi</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color: #d9d9d9;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Chairil_Anwar_Aku_Ini_Binatang_Jalang_.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Aku Ini Binatang Jalang</h5>
+                <p class="card-text">Penulis : Chairil Anwar <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2022</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Crazy_Ketos_Vs_Ice_Waketos.jpg" width="86%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Crazy Ketos Vs Ice Waketos</h5>
+                <p class="card-text">Penulis : Syiva Yulia Utari <br> Penerbit : Moka Media <br> Tahun terbit : 2022</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Gagal_Tumbuh_Di_Perasaanmu.jpg" width="79%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gagal Tumbuh Di Perasaanmu</h5>
+                <p class="card-text">Penulis : Riza Ardila <br> Penerbit : Gradien Mediatama <br> Tahun terbit : 2022
+                </p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/kitab mantan.jpeg" width="95%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kitab Mantan</h5>
+                <p class="card-text">Penulis : Sekar Ayu Asmara <br> Penerbit : Andi Offset <br> Tahun terbit : 2022</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Parker-Pyne-investigates.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Parker Pyne Menyelidiki</h5>
+                <p class="card-text">Penulis : Agatha Christie <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit
+                  : 2018</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Patah tumbuh sembuh.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Patah, Tumbuh, Sembuh</h5>
+                <p class="card-text">Penulis : Reza Mustopa <br> Penerbit : Gradien Mediatama <br> Tahun terbit : 2022
+                </p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/Takdir_Sang_Arsy.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Takdir Sang Arsy</h5>
+                <p class="card-text">Penulis : Nur Hoiriah <br> Penerbit : AKAD <br> Tahun terbit : 2022</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-2">
+            <div class="card cat-card-2" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/fiksi/the_secret_commonwealth_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Secret Commonwealth</h5>
+                <p class="card-text">Penulis : Philip Pullman <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2022</p>
+                <a href="#fiksiRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-2">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="fiksiRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img2">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/fiksi/Chairil_Anwar_Aku_Ini_Binatang_Jalang_.jpg" alt="testi img2">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel2" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/fiksi/Chairil_Anwar_Aku_Ini_Binatang_Jalang_.jpg">
+                  <h3>Aku Ini Binatang Jalang - <span>Chairil Anwar</span></h3>
+                  <p>Ini kali tidak ada yang mencari cinta di antara gudang, rumah tua, pada cerita tiang serta temali.
+                    Kapal, perahu tiada berlaut menghembus diri dalam mempercaya mau berpaut. Gerimis mempercepat kelam.
+                    Ada juga kelepak elang menyinggung muram, desir hari lari berenang menemu bujuk pangkal akanan.
+                    Tidak bergerak dan kini tanah dan air tidur hilang ombak. Tiada lagi. Aku sendiri. Berjalan menyisir
+                    semenanjung, masih pengap harap sekali tiba di ujung dan sekalian selamat jalan dari pantai keempat,
+                    sedu penghabisan bisa terdekap.
+                    <br><br>
+                    1946 Aku Ini Binatang Jalang adalah kumpulan puisi terlengkap karya penyair terbesar Indonesia
+                    Chairil Anwar. Selama ini puisi-puisinya tersebar dalam beberapa buku seperti Deru Campur Debu,
+                    Kerikil Tajam dan Yang Terampas dan Yang Putus. Sebagian lagi ada dalam Tiga Menguak Takdir dan
+                    Chairil Anwar Pelopor Angkatan 45. Selain keseluruhan sajak asli, dalam koleksi ini juga dimuat
+                    untuk pertama kalinya surat-surat Chairil—yang menggambarkan "keadaan jiwa"-nya—kepada karibnya H.B.
+                    Jassin. Dalam hidupnya yang singkat, Chairil Anwar telah menghasilkan puisi-puisi yang akan terus
+                    hidup seribu tahun lagi.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/fiksi/Crazy_Ketos_Vs_Ice_Waketos.jpg">
+                  <h3>Crazy Ketos Vs Ice Waketos - <span>Syiva Yulia Utari</span></h3>
+                  <p>Bagaimana rasanya menjadi patner most wanted boy, selaku ketua OSIS dengan seribu tingkah
+                    absurdnya? Arka Mahendra Stevenson selaku ketua OSIS yang selalu mengusik kehidupan Kesya dengan
+                    segala tingkah konyolnya dan mencoba memecahkan misteri dalam diri Kesya.
+                    <br><br>
+                    Kesya Theresa Lexandra gadis pindahan dengan seribu materi dalam dirinya mulai dari hilangnya kasih
+                    sayang orang tua serta teror mengancam yang terus berdatangan membuat gadis itu semakin menutup
+                    diri. Perilaku berbeda, pemikiran berbeda, sifat berbeda, apa mereka dapat menjalankan tugas dengan
+                    baik? Dan apakah Arka berhasil menguak misteri dalam diri Kesya?
+                    <br><br>
+                    “Lo anak baru yah? Kelas berapa lo? Jurusan apa? Oh iya nama lo siapa? Umur lo berapa? Hobi lo
+                    apaan? Rumah lo di mana? Nama bapak lo siapa? Mami lo siapa? Lo ikut arisan ibu-ibu komplek enggak?
+                    Lo suka ghibah enggak? Emm... enggak mungkin cewe enggak ghibah. Kan no ghibah no life," cetus Arka
+                    panjang lebar. "Buat apa lo peduli sama gue? Karena kasihan? Gue enggak butuh belas kasih dari lo?!"
+                    ucap Kesya ketus.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/fiksi/Gagal_Tumbuh_Di_Perasaanmu.jpg">
+                  <h3>Gagal Tumbuh Di Perasaanmu - <span>Riza Ardila</span></h3>
+                  <p>Buatku, rasa itu bukan soal seberapa banyak kamu mengatakannya, tapi seberapa mampu kamu
+                    menunjukkannya.” Terkadang untuk merasakan dekat, kita harus tahu apa itu jauh. Untuk merasakan
+                    senangnya jalan bersama, kita harus tahu apa itu berlari mengejar, dan untuk merasakan bahagianya
+                    saling mencintai, maka kita harus paham, bagaimana rasanya gagal tumbuh di perasaan orang lain.
+                    <br><br>
+                    Sejauh ini menurut gue hal paling sulit dalam kisah romansa adalah move on dari gebetan. Logikanya,
+                    bagaimana bisa kita melupakan seseorang yang bahkan belum pernah kita miliki sebelumnya?
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/fiksi/kitab mantan.jpeg">
+                  <h3>Kitab Mantan - <span>Sekar Ayu Asmara</span></h3>
+                  <p>Hey, Shay Apa bener pasanganmu cinta mati sama lo 100%? Apa kamu punya pacar hanya jadi ajang pamer
+                    ke sahabat-sahabat Lo? Tapi dengan kamu punya pacar saatnya kedua kaki Lo mesti kencang menapak
+                    bumi, jangan goyang ke kanan atau kiri. Jangan sampai Lo jadi ga punya akal sehat dan jadi bucin
+                    banget dengan pasangan Lo tanpa melihat dirinya seperti apa. Melewati masa pacaran lo harusnya udah
+                    bisa mengukur si dia itu spesies apa. Kenali tanda-tandanya.
+                    <br><br>
+                    Apa dia benar menghargai dan menyayangi lo? Kenali hal-hal yang tak biasa di awal pacaran. Misalnya
+                    Lo udah ga bisa jadi diri sendiri, dan makin ilfil dengan sikap-sikapnya. Kalau dari awal-awal
+                    pacaran udah basi, buat apa lanjut?
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/fiksi/Parker-Pyne-investigates.jpg">
+                  <h3>Parker Pyne Menyelidiki (Parker Pyne Investigates) - <span>Agatha Christie</span></h3>
+                  <p>Anda punya masalah? Atau tidak bahagia? Berkonsultasilah pada Mr. Parker Pyne. Pria gemuk yang
+                    ramah ini menyediakan layanan konsultasi dan penyelidikan yang dijamin memuaskan. Mulai dari
+                    mengatasi masalah suami yang cemburu, istri yang curiga, sampai kasus kematian yang mencurigakan di
+                    Sungai Nil. Mr. Parker Pyne sangat ahli dalam menilai sifat manusia, jadi jangan coba-coba
+                    mengelabuinya. Bisa-bisa Anda akan sangat menyesal sesudahnya.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/fiksi/Patah tumbuh sembuh.jpg">
+                  <h3>Patah, Tumbuh, Sembuh - <span>Reza Mustopa</span></h3>
+                  <p>Aku berhak atas bahagiaku dan aku berhak memperjuangkan itu. Terima kasih atas luka kemarin, itu
+                    sudah cukup jadi alasan kuatku. Putus? Aku cari lagi! Gagal? Aku coba lagi! Patah? Aku rangkai lagi!
+                    Dan kalau aku harus jatuh lagi, aku pasti akan bangkit kembali! Ternyata memang benar, tidak ada
+                    yang mudah untuk mencapai yang indah. Aku percaya bahwa yang patah akan tumbuh dan kembali sembuh.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/fiksi/Takdir_Sang_Arsy.jpg">
+                  <h3>Takdir Sang Arsy - <span>Nur Hoiriah</span></h3>
+                  <p>Kehidupan Azzam Khalif Putra awalnya datar saja, kuliah, menghafal Our'an, membantu ibunya di
+                    kantin kampus. dan melatih hobi memasaknya. Hingga suatu ketika, semua berubah sejak kehadiran Nasya
+                    Almaira Azzahra yang secara tidak sengaja di kantin kampus. “Bu, itu anaknya, ya, yang masak sambal
+                    baca murotal Our'an?" "Eh, iya, Neng." Baru pertama kali rasanya Nasya melihat, seorang pria rupawan
+                    yang mau membantu ibunya, plus senang baca Our'an. Masyaallah.
+                    <br><br>
+                    Sayangnya, saat Azzam ingin melakukan ta'aruf, ayah Nasya menolak mentah-mentah kehadiran Azzam.
+                    Sebab, secara strata, kondisi Azzam berbeda jauh dengan Nasya. Hingga suatu ketika, di tengah
+                    kesedihannya, Azzam mendapati kenyataan pahit jika wanita yang ia cintainya harus menikah dengan
+                    sahabat dekatnya, Fatih.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/fiksi/the_secret_commonwealth_.jpg">
+                  <h3>Persekutuan Rahasia (The Secret Commonwealth) - <span>Philip Pullman</span></h3>
+                  <p>Lanjutan La Belle Sauvage Lyra sekarang berusia dua puluh tahun. Suatu hari daemonnya, Pantalaimon,
+                    menyaksikan pembunuhan brutal yang membuat mereka terseret ke dalam dunia rumit dan berbahaya.
+                    Perjalanan mereka juga melibatkan Malcom, bocah penyelamat Lyra yang sekarang telah menjadi pria
+                    dewasa. Bersama-sama, mereka harus meninggalkan Oxford, melintasi benua Eropa, dan masuk ke Asia,
+                    mencari apa yang hilang—-kota yang dihantui daemon, rahasia di jantung padang pasir, dan misteri tak
+                    terpecahkan tentang Debu. Bahaya yang mengadang membuat mereka mempertanyakan dunia yang mereka
+                    ketahui selama ini, juga diri sendiri.
+                    <br><br>
+                    “Tulisan Mr. Pullman jelas, bersih, dan kuat, tidak pernah
+                    berlebihan tapi justru jadi semakin efektif.” —The Wall Street Journal
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="komikCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Komik</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color:#00adb5 ;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/akasha_CITY_HUNTER.jpg" width="77.5%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Akasha - City Hunter</h5>
+                <p class="card-text">Penulis : Hojo Tsukasa <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/tokyo_ghoul_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tokyo Ghoul</h5>
+                <p class="card-text">Penulis : Sui Ishida <br> Penerbit : M&C! <br> Tahun terbit : 2018</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/FIST_OF_THE_NORTH_STAR_.jpg" width="82.5%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">First of the North Star</h5>
+                <p class="card-text">Penulis : Tetsu Hara & Buronson <br> Penerbit : M&C! <br> Tahun terbit : 2022.</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/FULLBLOOM_CHECKINESS_15.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Full Bloom Cheekiness</h5>
+                <p class="card-text">Penulis : Miyuki Mitsubachi <br> Penerbit : M%C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/hibiki.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hibiki</h5>
+                <p class="card-text">Penulis : PMitsuharu Yanamoto <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/juliet of the boarding school.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Juliet of The Boarding School</h5>
+                <p class="card-text">Penulis : Yousuke Kaneda <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/miiko.jpeg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hai, Miiko</h5>
+                <p class="card-text">Penulis : Ono Eriko <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-3">
+            <div class="card cat-card-3" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/komik/ONE_ROOM_OF_HAPPINESS_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">One Room of Happiness</h5>
+                <p class="card-text">Penulis : HAKURI <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#komikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-3">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="komikRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img3">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/komik/akasha_CITY_HUNTER.jpg" alt="testi img3">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel3" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/komik/akasha_CITY_HUNTER.jpg">
+                  <h3>AKASHA : City Hunter - Complete Edition 10 - <span>Hojo Tsukasa</span></h3>
+                  <p>Pertarungan kelima dimulai!! Wakil dari umat manusia adalah pesumo terkuat sepanjang sejarah,
+                    lelaki yang dikenal sebagai Pesumo Tanpa Tanding, Raiden Tame’emon!! Sementara wakil dari para dewa
+                    adalah sang Dewa Penghancur terkuat yang berada di puncak dunia dewa Indoa, Shiva!! Serangan seperti
+                    apa yang dilepaskan oleh Raiden untuk memperoleh keunggulan dari Shiva!? Begitu dimulai, arena
+                    langsung menjadi ajang pertarungan sengit!! Pesumo Tanpa Tanding VS Dewa Terkuat dalam mitos India!!
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/komik/tokyo_ghoul_.jpg">
+                  <h3>Tokyo Ghoul : Re 02 - <span>Sui Ishida</span></h3>
+                  <p>“Aku tidak tahu seperti apa kehidupanku selama 20 tahun yang lalu.” Urie, Shirazu, Mutsuki,
+                    Yonebayashi… para anggota tim Quinx memendam perasaan masing-masing dalam hati setelah tahu bahwa
+                    mentor mereka, Haise Sasaki, adalah “manusia setengah ghoul”. Sembari terus mengejar petunjuk
+                    tentang organisasi ghoul “Aogiri Tree” yang semakin bertambah kuat, tim Quinx menjalankan tugas baru
+                    untuk menyelesaikan kasus “Nutcracker”. Di sebuah kafe yang tidak sengaja dikunjunginya, Haise
+                    bertemu dengan “aroma yang menimbulkan kerinduan".
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/komik/FIST_OF_THE_NORTH_STAR_.jpg">
+                  <h3>AKASHA : Fist of the North Star 10 - <span>Tetsuo Hara & Buronson</span></h3>
+                  <p>Langit mengutus Raoh dan Kenshiro, dua penerus ke dunia. Pertarungan di mana keduanya saling
+                    menguasai teknik rahasia pamungkas muso tensei menjadi duel yang mematikan. Dan akhirnya, penyesalan
+                    pun tiba saat pukulan terakhir sepenuh jiwa Raoh beradu dengan pukulan hati yang tak bisa
+                    dihancurkan milik Kenshiro! “Tak ada penyesalan sedikit pun dalam hidupku!”
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/komik/FULLBLOOM_CHECKINESS_15.jpg">
+                  <h3>Full Bloom Cheekiness 15 - <span>Miyuki Mitsubachi</span></h3>
+                  <p>Yuki dan Naruse sebentar lagi akan mengikuti training camp klub basket. Usami pun ikut sebagai
+                    asisten manajer sementara. Training camp kali ini pasti akan seru!! Menghabiskan waktu 24 jam sehari
+                    dengan Yuki dalam training camp membuat Shizuka akhirnya melakukan sesuatu yang tidak disangka!!
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/komik/hibiki.jpg">
+                  <h3>Hibiki - Kiat Menjadi Novelis 11 - <span>Mitsuharu Yanamoto</span></h3>
+                  <p>Setelah mengguncang dunia dengan memenangkan berbagai penghargaan bergengsi, Hibiki tetap berusaha
+                    menjalani keseharian dalam damai. Berkat rencana anehnya, serangan media massa terhadap novelis
+                    genius itu pun berhenti. Kemudian, tahun terakhir Hibiki di SMA pun dimulai…
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/komik/juliet of the boarding school.jpg">
+                  <h3>Juliet of The Boarding School 12 - <span>Yousuke Kaneda</span></h3>
+                  <p>Inuzuka tiba-tiba hilang ingatan!! Inuzuka yang berubah jadi polos, menganggap Maru sebagai sahabat
+                    dan Hasuki sebagai pacarnya hingga membuat seantero sekolah jadi gempar! Demi mengembalikan ingatan
+                    Inuzuka, kini Persia dan Hasuki harus menghentikan sementara pertikaian antar asrana dan bekerja
+                    sama! Dengan kekuatan cinta, akankah ingatan Inuzuka bisa kembali?!
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/komik/miiko.jpeg">
+                  <h3>Hai, Miiko! 34 - <span>Ono Eriko</span></h3>
+                  <p>Hari-hari Miiko dan kawan-kawan di SD Suginoki telah usai. Sambil menyimpan semua kenangan indah
+                    dalam hati, mereka kini melangkah maju sebagai murid SMP! Gedung sekolah baru, cinta baru,
+                    persahabatan baru, juga keseruan baru telah menanti. Mari kita rayakan momen berharga Miiko
+                    bersama-sama!
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/komik/ONE_ROOM_OF_HAPPINESS_.jpg">
+                  <h3>One Room of Happiness 07 - <span>HAKURI</span></h3>
+                  <p>“Jauh di lubuk hatimu, kau masih berharap ada orang datang menolongmu, kan?” Kenapa Matsubase mau
+                    bersusah payah menolong Sachi? Ternyata dia memiliki masa lalau yang tak kalah suram dibanding
+                    Sachi. Rasa tak berdaya, ingin mati, tapi sebetulna mendambakan pertolongan dari orang lain...
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel3" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel3" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="motivCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Motivasi & Pengembangan Diri</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color: #d9d9d9;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Berapa_Harga_Nyawa hari ini.png" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Berapa Harga Nyawa Hari Ini</h5>
+                <p class="card-text">Penulis : Eko Triono <br> Penerbit : Shira Media <br> Tahun terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/hidup gini gini aja gapapa.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hidup Gini-gini Aja</h5>
+                <p class="card-text">Penulis : Vema Novitasari <br> Penerbit : Kepustakaan Populer Gramedia <br> Tahun
+                  terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Jurus Ampuh Memperbaiki Cacat Kepribadian.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jurus Ampuh Memperbaiki cacat Kepribadian</h5>
+                <p class="card-text">Penulis : Yusuf al-Aqshari <br> Penerbit : Gemilang <br> Tahun terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Move_Forward_with_passion_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Move Forward With Passion</h5>
+                <p class="card-text">Penulis : Louis Sastrawijaya <br> Penerbit : Gramedia Pustaka Utama <br> Tahun
+                  terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Saat_Kita_Ingin_Merubah_Orang_Lain_page-0001.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Saat Kita Ingin merubah Orang Lain</h5>
+                <p class="card-text">Penulis : Agung Adiprasetyo <br> Penerbit : Gramedia Pustaka Utama <br> Tahun
+                  terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/seni berpikir.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Seni Berpikir</h5>
+                <p class="card-text">Penulis : Emhaf <br> Penerbit : Psikologi Corner <br> Tahun terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Senjata_Hebat_Para_Introvert.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Senjata Hebat Para Introvert</h5>
+                <p class="card-text">Penulis : Holley Gerth <br> Penerbit : Gemilang <br> Tahun terbit : 2022</p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-4">
+            <div class="card cat-card-4" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/motivasi/Untuk_Kamu_yang_Gampang_Menyerah.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Untuk Kamu Yang Gampang Menyerah</h5>
+                <p class="card-text">Penulis : Natasha Radiani <br> Penerbit : Psikologi Corner <br> Tahun terbit : 2022
+                </p>
+                <a href="#motivRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-4">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="motivRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img4">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/motivasi/Berapa_Harga_Nyawa hari ini.png" alt="testi img4">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel4" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/motivasi/Berapa_Harga_Nyawa hari ini.png">
+                  <h3>Berapa Harga Nyawa Hari Ini ? dan Cerita-Cerita Lainnya - <span>Eko Triono</span></h3>
+                  <p>Penasaran apa yang sebenarnya sedang terjadi, saya melihat bocah itu. Dia hanya senyum. "Cerita
+                    hidup kalian memang berasal dari buku ini," katanya santai, "duduklah. Mau es krim? Ini enak lho" -
+                    Pertemuan dan Perpisahan Terbaik
+                    <br><br>
+                    Pendengar, berikut ini kesaksian nyata pengguna jasa Terapi Ijazah yang terbukti man jur mengobati
+                    penyakit menganggur. Baik penyakit menganggur yang masih baru, maupun yang sudah menahun.Tiga kali
+                    konsultasi langsung kerja. Dijamin, tidak akan malu lagi. - Kesaksian Nyata
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/motivasi/hidup gini gini aja gapapa.jpg">
+                  <h3>Hidup Gini-gini Aja, Nggak Apa-apa - <span>Vema Novitasari</span></h3>
+                  <p>“Halo, nama saya Vema. Saya mbak-mbak kantoran biasa aja. Saya suka semangka, es teh, dan uang.”
+                    Lewat Welly si Terwelu, Vema bercerita tentang hal-hal sepele yang dia alami sejak kecil hingga
+                    dewasa. Nggak ada kejadian fantastis, semua berjalan biasa saja dan malah sering bikin miris. Tapi
+                    nggak apa-apa. Buku ini ada untuk menemani kita menertawakan kegagalan dan merayakan langkah-langkah
+                    kecil. Belum punya uang sekian juta? Nggak apa-apa. Belum pernah liburan ke Korea? Nggak apa-apa.
+                    Belum pernah mengalami hal-hal hebat lainnya? Nggak apa-apa. Hidup gini-gini aja juga nggak apa-apa.
+                    Pelan-pelan saja. Sebisanya :)
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/motivasi/Jurus Ampuh Memperbaiki Cacat Kepribadian.jpg">
+                  <h3>Jurus Ampuh Memperbaiki Cacat Kepribadian - <span>Yusuf al-Aqshari</span></h3>
+                  <p>Tak ada manusia yang sempurna. Setiap orang memiliki sisi kelebihan dan kekurangan. Termasuk dalam
+                    hal kepribadian. Orang yang punya kelebihan dalam kepribadian, maksudnya orang yang berhasil
+                    mengenali diri dan potensinya, kemudian memanfaatkan dan memaksimalkannya, besar kemungkinan dia
+                    akan menjadi orang sukses. Adapun orang yang kekurangan dalam kepribadian, bahkan memiliki aib atau
+                    cacat dalam kepribadiannya, kemungkinan dirinya akan terhambat dan terhalang untuk bisa berkembang,
+                    maju, dan sukses.
+                    <br><br>
+                    Bagaimana agar seseorang bisa lepas dari aib atau cacat kepribadian dalam dirinya? Buku ini membantu
+                    kita menemukan masalah-masalah dasarnya, kemudian menentukan solusi-solusinya. Dengan gaya tutur
+                    khas motivator yang paham betul tentang kepribadian, penulis memberi kita langkah-langkah yang
+                    praktis, sederhana, tetapi runut dan mudah, untuk memperbaiki aib atau cacat kepribadian. Dari
+                    mengenali dan mengidentifikasi cacat-cacat itu, menyediakan sarana-sarana perbaikan, hingga
+                    proses-proses pemecahannya. Inilah buku yang memandu kita untuk menjadi tuan bagi diri sendiri dan
+                    sukses dalam kehidupan sosial, baik di lingkungan keluarga, masyarakat, maupun tempat kerja.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/motivasi/Move_Forward_with_passion_.jpg">
+                  <h3>Move Forward With Passion - <span>Louis Sastrawijaya</span></h3>
+                  <p>Tujuan buku ketujuh karya Louis Sastrawijaya yang akan diterbitkan oleh Gramedia Pustaka Utama
+                    (2022) ini adalah menginspirasi dan menjadi berkat bagi seluruh pembacanya agar senantiasa semangat
+                    luar biasa dalam bekerja meskipun menghadapi masa yang menantang di masa pandemi ini. Buku ini akan
+                    berisikan sekitar 180 halaman dan terdiri dari tujuh chapter.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/motivasi/Saat_Kita_Ingin_Merubah_Orang_Lain_page-0001.jpg">
+                  <h3>Saat Kita Ingin Mengubah Orang Lain - <span>Agung Adiprasetyo</span></h3>
+                  <p>Namanya manusia, semua hal harus cocok, pas, dan sesuai dengan apa yang ada dalam benak, kebiasaan,
+                    dan pandangannya. Pemimpin ingin mengubah anak buah. Suami ingin mengubah istri. Orangtua ingin
+                    mengubah anaknya. Guru ingin mengubah muridnya. Para politikus ingin mengubah rakyat. Kata «berubah"
+                    dan "perubahan" pun menjadi isu utama dalam banyak perbincangan hari ini. Namun, ternyata butuh
+                    banyak upaya untuk mengubah seseorang sesuai keinginan kita.
+                    <br><br>
+                    Buku ini bercerita tentang bagaimana lingkungan membentuk sikap manusia, menginstal program, sampai
+                    menjadikan seseorang mempunyai perilaku dan kecenderungan kepribadian (personality) yang unik, yang
+                    berbeda dari orang lain. Semoga buku ini bisa menjadi inspirasi bagi siapa saja yang ingin mengubah
+                    orang lain tanpa merasa putus asa apabila usahanya tidak berhasil.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/motivasi/seni berpikir.jpg">
+                  <h3>Seni Berpikir - <span>Emhaf</span></h3>
+                  <p>SUDAHKAH PEMIKIRANMU MENEMBUS BATAS REALITA? BUKU INI MENGAJAKMU UNTUK MEMAHAMI
+                    KEMUNGKINANKEMUNGKINAN LAIN DARI SEBUAH FAKTA YANG ADA. BAHKAN, KAMU AKAN DIGIRING UNTUK MENCIPTAKAN
+                    DUNIA BARU, REALITA
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/motivasi/Senjata_Hebat_Para_Introvert.jpg">
+                  <h3>Senjata Hebat Para Introvert - <span>Holley Gerth</span></h3>
+                  <p>Apakah Anda sering membandingkan diri Anda dengan orang lain? Berpikir bahwa orang lain mudah
+                    bergaul namun Anda tidak. Dan ketakutan terkadang menguasai diri Anda. Holley Gerth pernah
+                    mengalaminya, karena dia seorang introver. Begitu juga orang-orang hebat lainnya seperti: Joanna
+                    Gaines, Abraham Lincoln, Albert Einstein, Oprah, dan Michael Jordan.
+                    <br><br>
+                    Gerth menunjukkan bahwa apa yang seorang introver lihat sebagai perjuangan sebenarnya bisa menjadi
+                    kekuatan terbesar mereka! Alih-alih bertanya, untuk sukses haruskah Anda berubah. Ia menunjukkan
+                    bahwa Anda bisa kuat dengan sepenuhnya menjadi diri Anda sendiri. Biarkan Senjata Hebata Para
+                    Introver menunjukkan bahwa Anda persis seperti yang Tuhan ciptakan untuk Anda!
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/motivasi/Untuk_Kamu_yang_Gampang_Menyerah.jpg">
+                  <h3>Untuk Kamu yang Gampang Menyerah - <span>Natasha Radiani</span></h3>
+                  <p>“Suamiku meninggal karena malaria, dan 3 bulan kemudian putraku satu-satunya meninggal ditabrak
+                    mobil. Aku tak punya siapa pun. Aku tak lagi memiliki apa pun. Aku tak bisa tidur. Aku tak bisa
+                    makan. Aku tak pernah tersenyum kepada siapa pun, aku bahkan berpikir untuk mengakhiri hidupku.
+                    Hingga suatu malam seekor anak kucing mengikutiku dari kantor ke rumah. Di luar sangat dingin, jadi
+                    kuputuskan untuk membiarkan kucing itu masuk ke rumah. Kuberikan ia susu dan ia meminumnya hingga
+                    piringnya licin. Lalu ia mendengkur dan menggosokkan badannya ke kakiku dan pertama kalinya setelah
+                    berbulan-bulan, aku tersenyum. Lalu aku berpikir, jika menolong seekor anak kucing bisa membuatku
+                    tersenyum, mungkin melakukan sesuatu untuk orang lain bisa membuatku bahagia.”
+                    <br><br>
+                    Pernahkah sebuah masalah pelik membuat hidup Anda terpuruk? Pernahkah Anda merasa kecil, lemah, dan
+                    tak berarti? Pernahkah Anda merasa begitu hancur hingga Anda mulai berpikir Tuhan telah meninggalkan
+                    Anda?
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="nonfikCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Non Fiksi</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color:#00adb5 ;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/breath, cara bernapas dengan benar.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cara Bernafas dengan Benar</h5>
+                <p class="card-text">Penulis : James Nestor <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2021</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/JANGAN_DIET.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jangan Diet</h5>
+                <p class="card-text">Penulis : Caroline Dooner <br> Penerbit : M&C! <br> Tahun terbit : 2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/MENGENDALIKAN_ASAM_URAT_C_1_4_page-0001.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mengendalikan Asam Urat</h5>
+                <p class="card-text">Penulis : Dr. Hans Tandra <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit
+                  : 2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/mengubah hobi.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mengubah Hobi</h5>
+                <p class="card-text">Penulis : Yuni Sugiarti <br> Penerbit : Gramedia Widiasarana Indonesia <br> Tahun
+                  terbit : 2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/Lancar_Ngomong_Bahasa_Inggris_Untuk_Pemula.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Lancar Bahasa Inggris</h5>
+                <p class="card-text">Penulis : Satya setyoko, S.S. <br> Penerbit : Anak Hebat Indonesia <br> Tahun
+                  terbit : 2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/stop_Pikun_di_Usia_Muda.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Stop Pikun di Usia Muda</h5>
+                <p class="card-text">Penulis : DR. Yuda Turana, SP. S <br> Penerbit : Gramedia Pustaka Utama <br> Tahun
+                  terbit : 2020</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/Sulam_Alis_Eyeliner__Bibir_Profesional.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sulam Alis</h5>
+                <p class="card-text">Penulis : Fanny Chan <br> Penerbit : Penerbit Andi <br> Tahun terbit : 2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-5">
+            <div class="card cat-card-5" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/non fiksi/Pedoman_Terkini_Seleksi_Masuk_Ipdn_2022_-_2023.jpg" width="75%"
+                  class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Seleksi Masuk IPDN 2022-2023</h5>
+                <p class="card-text">Penulis : Tim Tenor Anak Bangsa <br> Penerbit : Arruzz Media <br> Tahun terbit :
+                  2022</p>
+                <a href="#nonfikRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-5">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="nonfikRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img5">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/non fiksi/breath, cara bernapas dengan benar.jpg" alt="testi img5">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel5" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/non fiksi/breath, cara bernapas dengan benar.jpg">
+                  <h3>Breath: Cara Bernapas Dengan Benar - <span>JAMES NESTOR</span></h3>
+                  <p>Terlepas dari apa yang kita makan, seberapa banyak kita berolahraga, seberapa lenturnya gen kita,
+                    seberapa kurus atau belia atau kuatnya kita—semua itu hanya akan penting jika kita bernapas dengan
+                    benar. Beberapa cara bernapas akan memelihara otak, sementara beberapa lainnya akan mematikan sel
+                    saraf; beberapa akan membuat kita sehat, beberapa lainnya akan mempercepat kematian. Jurnalis James
+                    Nestor berkeliling dunia untuk mencari tahu apa yang salah dan berusaha memperbaikinya. Nestor
+                    melacak para pria dan wanita yang menjelajahi sains tersembunyi di balik praktik-praktik pernapasan
+                    kuno seperti Pranayama, Sudarshan Kriya, dan Tummo, dan bekerja sama dengan ahli paru-paru untuk
+                    menguji secara ilmiah keyakinan lama tentang cara kita bernapas. Penelitian modern menunjukkan
+                    kepada kita bahwa membuat sedikit penyesuaian pada cara kita menghirup dan mengembuskan napas dapat
+                    meningkatkan performa atletik; meremajakan organ dalam; menghentikan kebiasaan mendengkur, asma, dan
+                    penyakit autoimun; dan bahkan meluruskan tulang belakang yang menderita skoliosis.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/non fiksi/JANGAN_DIET.jpg">
+                  <h3>Jangan Diet: Sehat Tanpa Repot - <span>Caroline Dooner</span></h3>
+                  <p>Katanya, diet adalah cara terbaik untuk bisa memiliki bentuk dan ukuran tubuh yang ideal . Katanya
+                    lagi, diet adalah cara terampuh untuk menjaga kesehatan. Padahal faktanya, diet hanya akan membuat
+                    kita terus merasa lapar hingga sistem metabolisme tubuh kita rusak!
+                    <br><br>
+                    Ya, ini bukan buku diet pasaran. Jadi, di buku ini tidak akan ditemukan janji-janji manis soal berat
+                    badan yang akan turun dalam waktu seminggu. Tidak akan pula ditemukan omong kosong matematis tentang
+                    jumlah kalori yang tubuh perlukan setiap harinya. Yang ada hanyalah himbauan untuk jangan pernah
+                    membatasi asupan makanan yang masuk ke tubuh kita. Kalau lapar, makan. Masih lapar, makan lagi.
+                    Berat badan naik? Tidak apa-apa. Pokoknya, makan apa saja, dan jangan diet!
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/non fiksi/MENGENDALIKAN_ASAM_URAT_C_1_4_page-0001.jpg">
+                  <h3>Mengendalikan ASAM URAT - <span>Dr. Hans Tandra</span></h3>
+                  <p>Tak sekadar menyebabkan nyeri dan bengkak di satu bagian hingga ke seluruh tubuh, asam urat yang
+                    tak terkendali bisa berdampak ke organ tubuh lainnya, dapat merusak dinding pembuluh darah kemudian
+                    memicu serangan jantung dan stroke. Sebaliknya, penyakit lainnya pun bisa ikut menyulut naiknya asam
+                    urat, seperti gagal ginjal, diabetes, obesitas, atau kanker. Upaya mengalahkan asam urat yang tinggi
+                    harus dilakukan secara menyeluruh: melalui mengatur diet dan gaya hidup, menurunkan berat badan yang
+                    berlebihan, serta memerangi penyakit seperti diabetes, hipertensi, dan kolesterol tinggi. Kebenaran
+                    mengenai penyakit ini harus dipahami agar kita bisa menjadi pemenang dalam melawan penya kit ini,
+                    terbebas dari rasa nyeri, dan meni kmati hidup yang sehat.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/non fiksi/mengubah hobi.jpg">
+                  <h3>Teknopreneur Aglaonema: Mengubah Hobi Menjadi Rezeki - <span>Yuni Sugiarti</span></h3>
+                  <p>Buku ini sangat cocok dibaca oleh individu yang ingin menikmati hobinya sambil berbisnis,
+                    memanfaatkan teknologi (teknopreneur), bekerja dari rumah (work from home) atau di mana pun.
+                    Teknopreneur cocok sebagai usaha sampingan (side job) bagi para: eksekutif, ASN, ibu rumah tangga,
+                    mahasiswa, dan juga pensiunan. Buku ini enak dibaca dan mudah dipraktikkan. Isinya merupakan
+                    pengalaman empirik penulis sebagai teknopreneur. Contoh bisnis yang disajikan relatif sederhana,
+                    tanaman hias Aglaonema. Pembahasan juga dilengkapi pengalaman dan hasil-hasil penelitian terhadap
+                    para pelaku UKM dari berbagai daerah.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/non fiksi/Lancar_Ngomong_Bahasa_Inggris_Untuk_Pemula.jpg">
+                  <h3>Lancar Ngomong Bahasa Inggris Untuk Pemula - <span>SATYA SETYOKO, S.S.</span></h3>
+                  <p>Apakah Anda sering membandingkan diri Anda dengan orang lain? Berpikir bahwa orang lain mudah
+                    bergaul namun Anda tidak. Dan ketakutan terkadang menguasai diri Anda. Holley Gerth pernah
+                    mengalaminya, karena dia seorang introver. Begitu juga orang-orang hebat lainnya seperti: Joanna
+                    Gaines, Abraham Lincoln, Albert Einstein, Oprah, dan Michael Jordan.
+                    <br><br>
+                    Gerth menunjukkan bahwa apa yang seorang introver lihat sebagai perjuangan sebenarnya bisa menjadi
+                    kekuatan terbesar mereka! Alih-alih bertanya, untuk sukses haruskah Anda berubah. Ia menunjukkan
+                    bahwa Anda bisa kuat dengan sepenuhnya menjadi diri Anda sendiri. Biarkan Senjata Hebata Para
+                    Introver menunjukkan bahwa Anda persis seperti yang Tuhan ciptakan untuk Anda!
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/non fiksi/stop_Pikun_di_Usia_Muda.jpg">
+                  <h3>Stop Pikun Di Usia Muda - <span>DR. YUDA TURANA, SP. S</span></h3>
+                  <p>Ilmu tentang kesehatan otak telah berkembang sangat pesat. Meskipun demikian, sampai saat ini tidak
+                    ada obat mujarab yang dapat menyembuhkan Ci) gangguan otak yang disebut kepikunan atau demensia.
+                    Yang dapat kita lakukan adalah mencegah atau memperlambat kemunculannya tanpa perlu menunggu 0
+                    hingga usia senja. Ya, pencegahan kepikunan hendaknya kita mulai sekarang 17:1 juga. 1.0 Buku ini
+                    menyajikan berbagai fakta ilmiah serta menjawab beragam pertanyaan mengenai segala sesuatu yang
+                    berkaitan dengan pola hidup sehat demi memperkuat fungsi memori otak kita
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/non fiksi/Sulam_Alis_Eyeliner__Bibir_Profesional.jpg">
+                  <h3>Sulam Alis, Eyeliner, & Bibir Profesional - <span>Fanny Chan</span></h3>
+                  <p>Pertama di Indonesia, setelah sukses membuat buku pertamanya yang berjudul Rahasia Sulam Alis, kini
+                    Fanny Chan meluncurkan kembali buku tentang teknik sulam berjudul Sulam Alis, Eyeliner, & Bibir
+                    Profesional.
+                    <br><br>
+                    Fanny Chan merupakan pendiri Van Sulam Alis & Academy. Fanny telah sukses menghasilkan 1 juta dolar
+                    pertamanya pada usia 28 tahun. Dengan tangan emasnya, banyak siswa telah berprestasi dan menjadi
+                    juara nasional serta internasional, plus sukses berwirausaha mandiri. Buku ini kiranya dapat menjadi
+                    inspirasi dan menambah wawasan baru di dunia estetika. Buku ini juga telah dilengkapi dengan step by
+                    step dan banyak gambar secara detail.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/non fiksi/Pedoman_Terkini_Seleksi_Masuk_Ipdn_2022_-_2023.jpg">
+                  <h3>Pedoman Terkini Seleksi Masuk Ipdn 2022 – 2023 - <span>Tim Tentor Anak Bangsa</span></h3>
+                  <p>Seputar info SPCP IPDN * Tes Wawasan Kebangsaan - Nasionalisme - Integritas - Bela Negara - Pilar
+                    Negara - Bahasa Indonesia - UUD 1945 - Negara kesatuan Republik Indonesia (NKRI) * Tes Intelegensia
+                    Umum - Kemampuan Verbal 1. Analogi 2. Silogsme 3. Anahtis - Tes Kemampuan Numerik 1. Berhitung 2.
+                    Deret angka 3. Perbanclingan kuantitatif 4. Matematika centa - Tes Kemampuan Figural 1. Figuran
+                    analogi 2. Figural ketidaksamaan 3. Figural serial * Tes Karakteristik Pribadi (TKP) * Tes
+                    Psikologi, Tes Integritas dan Kejujuran * Info Tes Kesehatan Daerah
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel5" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel5" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="sainsCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Sains & Teknologi</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color: #d9d9d9;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/36_Jam_Belajar_Komputer_Microsoft_Office_2021.jpg" width="75%" class="img-fluid"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">36 Jam Belajar Komputer</h5>
+                <p class="card-text">Penulis : Budi Permana & Kurweni Ukar <br> Penerbit : Elex Media Komputindo <br>
+                  Tahun terbit : 2022</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/Belajar_Otodidak_Mysql_Edisi_Kedua.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Belajar Otodidiak MySQL</h5>
+                <p class="card-text">Penulis : Budi Raharjo <br> Penerbit : Informatika <br> Tahun terbit : 2022</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/Keamanan_Basis_Data_Relasional.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Keamanan Basis Data Relasional</h5>
+                <p class="card-text">Penulis : Suwanto Raharjo & Ema Utami <br> Penerbit : Andi Offset <br> Tahun terbit
+                  : 2022</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/kursus mandiri php.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kursus Mandiri PHP</h5>
+                <p class="card-text">Penulis : Budi Raharjo <br> Penerbit : Bi-Obses <br> Tahun terbit : 2022</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/Logika-Pemrograman-Python.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logika Pemrograman Phyton</h5>
+                <p class="card-text">Penulis : Abdul Kadir <br> Penerbit : Elex Media Komputindo <br> Tahun terbit :
+                  2019</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/semua bisa jadi programmer ruby.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Semua Bisa Jadi Programmer</h5>
+                <p class="card-text">Penulis : Ir. Yuniar Supardi <br> Penerbit : Elex Media komputindo <br> Tahun
+                  terbit : 2019</p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/Machine_Learning_Untuk_Pemula.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Machine Learning</h5>
+                <p class="card-text">Penulis : Irwansyah Saputra <br> Penerbit : Informatika <br> Tahun terbit : 2022
+                </p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-6">
+            <div class="card cat-card-6" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sains/SEO_Pamungkas.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SEO Pamungkas</h5>
+                <p class="card-text">Penulis : Su Rahman <br> Penerbit : Elex Media Komputindo <br> Tahun terbit : 2022
+                </p>
+                <a href="#sainsRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-6">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="sainsRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img6">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/sains/36_Jam_Belajar_Komputer_Microsoft_Office_2021.jpg" alt="testi img6">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel6" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/sains/36_Jam_Belajar_Komputer_Microsoft_Office_2021.jpg">
+                  <h3>36 Jam Belajar Komputer Microsoft Office 2021 - <span>Budi Permana & Kurweni Ukar</span></h3>
+                  <p>Office 2021 yang akan dibahas di dalam buku ini merupakan perpaduan dari beberapa program aplikasi
+                    handal, di antaranya Word 2021 sebagai program aplikasi pengolah kata (word processor), Excel 2021
+                    sebagai program aplikasi lembar kerja (spreadsheet), dan PowerPoint 2021 sebagai program aplikasi
+                    presentasi (presentations). Buku 36 Jam Belajar Komputer Microsoft Office 2021 ini dibuat agar Anda
+                    dapat mempelajari, memahami, dan mencoba penggunaan program-program aplikasi yang tergabung dalam
+                    Office 2021 secara cepat dan mudah sesuai dengan kebutuhan.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sains/Belajar_Otodidak_Mysql_Edisi_Kedua.jpg">
+                  <h3>Belajar Otodidak Mysql - <span>Budi Raharjo</span></h3>
+                  <p>Database (basis data) merupakan media untuk menyimpan data yang diperlukan oleh aplikasi, baik yang
+                    berjenis web, desktop, maupun aplikasi mobile. Meskipun database dapat dibuat menggunakan beberapa
+                    model, namun pada kenyataannya database dengan model relasional sampai saat ini masih menjadi yang
+                    terpopuler dan paling banyak digunakan. Dalam model relasional, data akan disimpan dalam bentuk
+                    tabel-tabel terpisah yang saling berelasi. Pengelolaan data di dalam database relasional dilakukan
+                    menggunakan perintah-perintah standar yang ditulis menggunakan bahasa SOL, singkatan dari Structured
+                    Cluery Language.
+                    <br><br>
+                    MySOL adalah salah satu software yang berfungsi untuk membuat dan mengelola database dengan model
+                    relasional. Software seperti ini dikenal dengan Relational Database Management System (RDBMS).
+                    Dengan MySOL, kita dapat membuat dan merancang sendiri database secara mudah, sesuai kebutuhan
+                    aplikasi yang sedang dikembangkan.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/sains/Keamanan_Basis_Data_Relasional.jpg">
+                  <h3>Keamanan Basis Data Relasional - <span>Suwanto Raharjo & Ema Utami</span></h3>
+                  <p>BUKU INI MEMBERIKAN GAMBARAN BERBAGAI PERMASALAHAN YANG DAPAT TERJADI DI SISTEM BASIS DATA
+                    RELASIONAL, DENGAN CONTOH KASUS MENGGUNAKAN POSTGRESQL SEBAGAI PERANGKAT LUNAK SISTEMNYA. BEBERAPA
+                    KESALAHAN
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sains/kursus mandiri php.jpg">
+                  <h3>Kursus Mandiri Php 8 - <span>Budi Raharjo</span></h3>
+                  <p>Buku ini akan memandu Anda mempelajari dan menggunakan PHP. Pembahasan dilakukan dari awal secara
+                    sistematis dan terstruktur agar seluruh materi yang disampaikan dapat mudah dipahami dan
+                    diimplementasikan ke dalam kasus-kasus riil. Buku ini berisi materi tentang konsep-konsep inti yang
+                    dibutuhkan dalam pemrograman (baik web maupun non-web), bagaimana menulis kode dengan gaya
+                    berorientasi objek, bagaimana mengelola data di dalam database menggunakan SQL, mengintegrasikan
+                    program dengan database, dan menggunakan fitur-fitur lain yang disediakan oleh PHP. Buku ini
+                    ditujukan untuk Anda yang ingin memiliki keterampilan membuat program menggunakan PHP dalam waktu
+                    singkat.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sains/Logika-Pemrograman-Python.jpg">
+                  <h3>Logika Pemrograman Python - <span>Abdul Kadir</span></h3>
+                  <p>Buku ini sangat cocok digunakan untuk pelajar, mahasiswa, atau siapa saja yang bermaksud untuk
+                    mempelajari pemrograman komputer dengan menggunakan bahasa Python. Buku ini lebih menekankan pada
+                    cara untuk menyelesaikan masalah. Oleh karena itu, banyak contoh permasalahan yang diberikan dan
+                    cara untuk menyelesaikannya. Contoh-contoh yang cukup banyak dan bahasa yang mudah dipahami membuat
+                    buku ini sangat mudah digunakan dan dapat menjadi penuntun untuk belajar bahasa Python secara
+                    mandiri.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/sains/semua bisa jadi programmer ruby.jpg">
+                  <h3>Semua Bisa Menjadi Programmer Ruby Basic - <span>Ir. Yuniar Supardi</span></h3>
+                  <p>Paradigma pemrograman telah berubah dari pemrograman procedural (teks), menuju ke pemrograman
+                    visual. Hingga kini, setidaknya dalam dua dasawarsa, akan menjadi pemrograman command line dengan
+                    ringan, mudah, dan mempunyai fitur OOP, serta kemampuan antaroperasi perangkat lunak dan perangkat
+                    keras, serta kode semakin singkat. Hal itu terjawab dengan munculnya bahasa pemrograman Python dan
+                    Ruby. Buku dengan judul Semua Bisa Menjadi Programmer Ruby Basic ini berisi cara membuat dan
+                    menguasai program Ruby dari dasar. Keunggulan buku ini adalah memandu Anda untuk dapat belajar
+                    bahasa pemrograman Ruby dasar dengan mudah dan cepat. Buku ini juga mempunyai nilai lebih pada
+                    pembahasannya yang detail dan rinci.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sains/Machine_Learning_Untuk_Pemula.jpg">
+                  <h3>Machine Learning Untuk Pemula - <span>Irwansyah Saputra & Dinar Ajeng Kristiyanti</span></h3>
+                  <p>Sebuah buku yang sangat lengkap untuk belajar tentang Machine Learning dari konsep dasar,
+                    preprocessing, berbagai ragam algoritme pada Machine Learning, dan berbagai alat ukur untuk
+                    memvalidasi serta mengevaluasi algoritme pada Machine Learning yang diimplementasikan pada berbagai
+                    bidang. Bu Dinar dan Pak Irwansyah menuliskan dengan sangat runtun serta menggunakan Bahasa yang
+                    mudah dipahami bagi pembaca yang baru mengenal tentang Machine Learning. Buku ini juga menjadi
+                    istimewa karena cocok bagi para pembaca yang sedang belajar pemrograman Phyton untuk menyelesaikan
+                    permasalahan di lingkungan sekitar kita menggunakan Machine Learning. Setiap coding dilengkapi
+                    dengan penjelasan yang lengkap tentang fungsionalitasnya, sehingga bagi pembaca yang belum mengenal
+                    Bahasa pemrograman Phyton dapat akan lebih cepat memahami Bahasa pemrograman ini. Buku ini sangat
+                    luar biasa, sehingga saya sangat merekomendasikan kepada khalayak yang baru belajar tentang Machine
+                    Learning untuk membaca buku ini.
+                    <br><br>
+                    Fanny Chan merupakan pendiri Van Sulam Alis & Academy. Fanny telah sukses menghasilkan 1 juta dolar
+                    pertamanya pada usia 28 tahun. Dengan tangan emasnya, banyak siswa telah berprestasi dan menjadi
+                    juara nasional serta internasional, plus sukses berwirausaha mandiri. Buku ini kiranya dapat menjadi
+                    inspirasi dan menambah wawasan baru di dunia estetika. Buku ini juga telah dilengkapi dengan step by
+                    step dan banyak gambar secara detail.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/sains/SEO_Pamungkas.jpg">
+                  <h3>SEO Pamungkas- <span>Su Rahman</span></h3>
+                  <p>Memiliki website adalah langkah awal. Langkah selanjutnya adalah mengoptimalkan website tersebut
+                    agar bisa dengan mudah ditemukan melalui mesin pencari Google. SEO adalah teknik yang harus dikuasi
+                    oleh pemilik website dan pelaku usaha online, karena jika website bisnis Anda tidak bisa ditemukan
+                    melalui mesin pencari Google maka Anda akan kehilangan peluang untuk mendapatkan pelanggan baru.
+                    Buku ini menjabarkan langkah demi langkah cara melakukan optimalisasi website, agar website bisa
+                    lebih mudah ditemukan melalui pencarian Google.
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel6" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel6" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="sastraCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Sastra & Filsafat</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color:#00adb5 ;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/_Fantasmagoria_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fantasmorgia</h5>
+                <p class="card-text">Penulis : Pramudya Utari <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2021</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/filsafat etika islam.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Filsafat Etika Islam</h5>
+                <p class="card-text">Penulis : M.amin Abdullah <br> Penerbit : Ircisod <br> Tahun terbit : 2020</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/filsafat hukum.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Filsafat Hukum</h5>
+                <p class="card-text">Penulis : Muhamad Erwin <br> Penerbit : Rajawali Press <br> Tahun terbit : 2016</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/Filsafat-Untuk-Para-Profesional.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Filsafat Untuk Para Profesional</h5>
+                <p class="card-text">Penulis : F. Budi Hardiman <br> Penerbit : Penerbit Buku Kompas <br> Tahun terbit :
+                  2019</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/MEMOIRS_OF_GEISHA.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Memoirs of a Geisha</h5>
+                <p class="card-text">Penulis : Arthur Golden <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2021</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/pangeran-cilik-le-petit-prince.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Le Petit Prince</h5>
+                <p class="card-text">Penulis : Antoine De Saint E. <br> Penerbit : Gramedia Pustaka Utama <br> Tahun
+                  terbit : 2015</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/remedies for the broken.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Remedies For The Broken</h5>
+                <p class="card-text">Penulis : Leony Jardine <br> Penerbit : Bhuana Ilmu Populer <br> Tahun terbit :
+                  2021</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-7">
+            <div class="card cat-card-7" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sastra/The_Song_of_Achilles_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Song of Achilles</h5>
+                <p class="card-text">Penulis : Madeline Miller <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit
+                  : 2022</p>
+                <a href="#sastraRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-7">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="sastraRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img7">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/sastra/_Fantasmagoria_.jpg" alt="testi img7">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel7" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/sastra/_Fantasmagoria_.jpg">
+                  <h3>Fantasmagoria - <span>Pramudya Utari</span></h3>
+                  <p>Adinda Balsam merasa dunianya tak cuma satu, tapi tiga. Dunia tempat kakinya berpijak, dunia tempat
+                    kepalanya tinggal, dan dunia tempat keduanya tindih-menindih. Dunia di kepala Balsam penuh imajinasi
+                    dan pertanyaan yang tak berkesudahan. Bermula dari bujukan seorang teman, Adinda Balsam akhirnya
+                    luluh ikut masuk ke pesantren di pucuk Jawa Timur. Sekolah yang ia pikir akan baik-baik saja
+                    ternyata membawa malapetaka. Hari-harinya penuh tekanan dan hukuman hingga nyaris tidak naik kelas.
+                    Dia kehilangan orang yang dia cintai. Dia bahkan bertemu paus pembunuh di bak mandi sekolah. Namun,
+                    di pesantren itu juga Balsam bertemu sahabat-sahabat terbaik. Manusia-manusia kuat yang
+                    mengajarkannya banyak hal. Hanya saja, apakah itu cukup membuat Balsam bertahan hingga lulus? Atau
+                    selamanya ia akan tersesat dalam pikiran yang berkelindan?
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sastra/filsafat etika islam.jpg">
+                  <h3>Filsafat Etika Islam - <span>M.Amin Abdullah</span></h3>
+                  <p>Di dunia Islam, siapa yang tak mengenal Imam Al-Ghazali. Ulama dan teolog besar dalam sejarah
+                    peradaban Islam. Hujjatul Islam bermazhab Syafi’i ini di kemudian hari memilih jalan sufi dan
+                    mewariskan banyak karya agung. Adalah Immanuel Kant di belahan dunia Barat, pemikir terkemuka yang
+                    juga sangat luas pengaruhnya. Bahkan ia dianggap sebagai filsuf terbesar di antara para filsuf
+                    modern. Pemikiran dan pula karya-karyanya membawa angin revolusi yang sangat kuat hingga saat ini.
+                    <br><br>
+                    Nah, buku ini mengkaji inti sentral sistem pemikiran dua figur pemikir terkemuka yang pengaruhnya
+                    sangat kuat itu, yaitu tentang etika. Bagaimana teori etika Al-Ghazali dan bagaimana pula teori
+                    etika Kant, keduanya diteliti secara kritis. Sehingga dapat terurai benang merah persamaan dan
+                    perbedaan keduanya. Bahkan, Anda akan disuguhi pula konsekuensi praktis inti sentral sistem
+                    pemikiran keduanya terhadap bidang-bidang lain kehidupan manusia.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/sastra/filsafat hukum.jpg">
+                  <h3>Filsafat Hukum - <span>Muhamad Erwin</span></h3>
+                  <p>Dengan memahami ﬁlsafat hukum akan menuntut masyarakat, kalangan akademisi, praktisi dan regulator
+                    hukum untuk menggunakan akal dan hatinya dengan berpikir mendalam, bertanya dan menggali kernbali
+                    apa-apa yang diperlukan untuk membuat suatu kerangka hukum yang kokoh, yang mengedepankan tujuan
+                    adanya hukum, sumber-sumber hukum serta pores yang menjadi garis lingkar hukum agar tetap edar pada
+                    tempatnya.
+                    <br><br>
+                    Dari buku ini penulis mengajak pembaca untuk melihat lebih jeli, dalam dan jauh mengenai hakikat
+                    hukum, mengetahui kebenaran, keadilan, kemanusiaan, nilai, etika dan moral di balik hukum, mencari
+                    mulai dari yang terbuka sampai kepada yang masih tersembunyi di dalam hukum, serta memahami hukum
+                    sebagai pertimbangan nilai dan postulat, hingga untuk kembali pada suatu kesadaran, memenuhi
+                    hukum-Nya.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sastra/Filsafat-Untuk-Para-Profesional.jpg">
+                  <h3>Filsafat Untuk Para Profesional - <span>F. Budi Hardiman</span></h3>
+                  <p>MEMBERI INSPIRASI TIDAK DENGAN CARA YANG BIASA-BIASA SAJA. para filsuf dunia digali untuk memberi
+                    pencerahan bagi para profesional. Penilikan akan menyingkap bahwa kita saling menolong sebagai
+                    sesama manusia lewat profesi yang kita emban. Jadi, profesi bukan alat mata pencarian belaka, juga
+                    bukan kendaraan bagi ambisi-ambisi dan kepongahan manusia.
+                    Penyelidikan lebih lanjut akan memperlihatkan bahwa profesi ikut membentuk identitas dan karakter,
+                    menjadi bagian pencarian makna hidup dan kebahagiaan, dan akhirnya juga menunjukkan manusia macam
+                    apa yang menyandangnya. Profesi adalah sarana untuk mengolah hidup yang baik dan menempa keutamaan.
+                    Ada jejak religius dalam kata profesi, yakni panggilan Tuhan.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sastra/MEMOIRS_OF_GEISHA.jpg">
+                  <h3>Memoar Seorang Geisha (Memoirs of a Geisha) - <span>Arthur Golden</span></h3>
+                  <p>Memoar Seorang Geisha mengajak kita memasuki dunia geisha yang penuh rahasia, dunia di mana
+                    penampilan sangatlah penting; di mana keperawanan seorang gadis dilelang kepada penawar tertinggi;
+                    di mana perempuan-perempuan dilatih untuk memikat laki-laki paling berkuasa; dan di mana cinta
+                    dicemooh sebagai ilusi belaka. Kisah Sayuri bermula di desa nelayan miskin pada tahun 1929, ketika
+                    sebagai anak perempuan berusia sembilan tahun, dengan mata biru-kelabu yang luar biasa, dia dijual
+                    ke sebuah rumah geisha terkenal. Tidak tahan dengan kehidupan di rumah itu, dia berusaha melarikan
+                    diri. Tindakan itu membuat dia terancam menjadi pelayan seumur hidup. Saat meratapi nasibnya di tepi
+                    Sungai Shirakawa, dia bertemu Iwamura Ken. Di luar kebiasaan, pria terhormat ini mendekati dan
+                    menghiburnya. Saat itu Sayuri bertekad akan menjadi geisha, hanya demi mendapat kesempatan bertemu
+                    lagi dengan pria itu, suatu hari nanti.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/sastra/pangeran-cilik-le-petit-prince.jpg">
+                  <h3>Pangeran Cilik: Le Petit Prince - <span>Antoine De Saint E.</span></h3>
+                  <p>Pangeran Cilik termasuk buku yang paling banyak diterjemahkan di dunia. Konon pernah disadur ke
+                    dalam 230 bahasa asing. Buku ini memang luar biasa. Tampaknya seolah cerita anak-anak, tapi
+                    sebenarnya dinikmati dan direnungkan juga oleh orang dewasa. Lewat cerita seorang anak yang
+                    mengamati dunia dengan mata naif dan lugu, Saint-Exupéry menyentuh beberapa nilai dan pengalaman
+                    manusia yang paling dasar, seperti kekuasaan, tanggung jawab, dan cinta. Dongeng yang mengharukan
+                    sekaligus amat mendalam ini termasuk karya-karya agung sastra dunia yang tidak terlupakan.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sastra/remedies for the broken.jpg">
+                  <h3>Remedies For The Broken - <span>Leony Jardine</span></h3>
+                  <p>Tentang perjalanan menyembuhkan luka hati. Perjalanan sebuah proses dari sakit, mendapatkan
+                    diagnosis, penyembuhan, hingga menemukan penawar dari pahitnya hidup. Buku ini sedikit banyak
+                    memberikan kenyataan bahwa hidup terasa tidak adil. Tapi kamu tidak sendiri. Kita semua berjuang
+                    melawan diri kita sendiri. Buku ini mungkin bisa menjadi suara yang ingin kamu dengar dan menjadi
+                    obat bagi siapa pun yang membutuhkannya.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sastra/The_Song_of_Achilles_.jpg">
+                  <h3>Nyanyian Achilles (The Song of Achilles) - <span>Su Rahman</span></h3>
+                  <p>Yunani pada zaman para pahlawan. Patroclus, seorang pangeran muda yang kikuk, diasingkan ke istana
+                    Raja Peleus dan putranya yang sempurna, Achilles. Mereka tumbuh menjadi pemuda yang cakap dalam seni
+                    perang dan pengobatan, dan kedekatan mereka berkembang menjadi hubungan yang lebih dalam---meski
+                    sangat ditentang oleh ibu Achilles, Thetis, dewi laut yang kejam. Lalu tersiar kabar bahwa Helen
+                    dari Sparta telah diculik. Bimbang antara takut dan rasa sayang terhadap sahabatnya, Patroclus pergi
+                    bersama Achilles ke Troy, tanpa menyadari bahwa tahun-tahun selanjutnya akan menjadi ujian bagi
+                    semua yang mereka sayangi.
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel7" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel7" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="sejaCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Sejarah</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color: #d9d9d9;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/china.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sejarah China</h5>
+                <p class="card-text">Penulis : Jusa Chandra <br> Penerbit : Gramedia Pustaka Utama <br> Tahun terbit :
+                  2020</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/de java oorlog.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">De Java Oorlog</h5>
+                <p class="card-text">Penulis : Abdul Rohim <br> Penerbit : Anak Hebat Indonesia <br> Tahun terbit : 2022
+                </p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/Hitam-Putih-Majapahit.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hitam Putih Majapahit</h5>
+                <p class="card-text">Penulis : Sri Wintala Achmad <br> Penerbit : Araska Publisher <br> Tahun terbit :
+                  2019</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/kartini.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kartini</h5>
+                <p class="card-text">Penulis : Joost Cote <br> Penerbit : Elex Media Komputindo <br> Tahun terbit : 2022
+                </p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/kpk.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">KPK Berdiri Untuk Negeri</h5>
+                <p class="card-text">Penulis : Arin Swandari <br> Penerbit : Penerbit Buku Kompas <br> Tahun terbit :
+                  2019</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/Salt-To-The-Sea.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Salt to the Sea</h5>
+                <p class="card-text">Penulis : Ruta Sepetys <br> Penerbit : Elex Media Komputindo <br> Tahun terbit :
+                  2018</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/sejarah perang dunia 1.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sejarah Perang Dunia-1</h5>
+                <p class="card-text">Penulis : Alfi Arifian <br> Penerbit : Sociality <br> Tahun terbit : 2020</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-8">
+            <div class="card cat-card-8" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sejarah/yajuj majuj.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ya'juj & Ma'juj</h5>
+                <p class="card-text">Penulis : Dr. Asy-Syafi Al-Mahi Ahmad <br> Penerbit : Pustaka Alvabet <br> Tahun
+                  terbit : 2022</p>
+                <a href="#sejaRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-8">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="sejaRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img8">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/sejarah/china.jpg" alt="testi img8">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel8" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a" data-img="image/sejarah/china.jpg">
+                  <h3>China: Warisan Klasik dan Daya Dinamis yang Menggetarkan Dunia - <span>Jusra Chandra</span></h3>
+                  <p>Napoleon Bonaparte pernah berujar, "China adalah raksasa yang sedang tidur. Biarkan terus lelap,
+                    karena bila terbangun, dia akan mengguncang dunia." Faktanya, di dataran luas yang dibelah Sungai
+                    Kuning dan Sungai Panjang (Chang Jiang atau Yang Tze), China tak pernah tidur; Ia terus bergolak dan
+                    berevolusi. China adalah laboratorium sosial sekaligus perpustakaan besar yang memuat sejarah
+                    peradaban selama tiga ribu tahun. Beragam peristiwa membentuk sejarah China, sejak masa prasejarah,
+                    masa terbentuknya berbagai kerajaan, masa kebangkitan dan keruntuhan dinasti, masa peralihan dan
+                    perubahan peristiwa, masa kemenangan dan tragedi individu, dan masa ketika karya para filsufnya
+                    menjadi tersohor, bahkan hingga saat ini. China: Warisan Klasik dan Daya Dinamis yang Menggetarkan
+                    Dunia menyajikan perkembangan alam pemikiran peradaban China dalam bentuknya yang murni serta
+                    bersahaja, termasuk reaksi bangsa China terhadap berbagai pengaruh yang datang dari Indoa, Eropa,
+                    Rusia, termasuk meningkatnya ketegangan dengan Amerika Serikat akhir-akhir ini.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/sejarah/de java oorlog.jpg">
+                  <h3>De Java Oorlog: Rangkuman Kronik Perang Jawa 1825-1830 - <span>Abdul Rohim</span></h3>
+                  <p>Apa yang menyebabkan Pangeran Diponegoro melawan takhta Mataram hingga memicu perang besar dalam
+                    sejarah Jawa sebagai "Perang Jawa 1825-1830"? Apa pula yang menyebabkan beberapa pengikut Diponegoro
+                    satu per satu menyerahkan diri kepada pihak asing (VOC)? Apa alasan sang pangeran—pada
+                    akhirnya—menyerahkan diri hingga dibuang ke Makassar?
+                    <br><br>
+                    Siapakah Pangeran Diponegoro, yang sosoknya dimitoskan sebagai 11 messiah" dari tanah Jawa, dan
+                    menginspirasi perang kemerdekaan dalam Masa Revolusi Fisik di kemudian hari?
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sejarah/Hitam-Putih-Majapahit.jpg">
+                  <h3>Hitam Putih Majapahit - <span>Sri Wintala Achmad</span></h3>
+                  <p>Buku ini menyajikan sejarah Kerajaan besar di Nusantara, yaitu Majapahit. Disajikan dari awal mula
+                    pendirian kerajaan oleh Dyah Wijaya, kejayaan di bawah kekuasaan Hayam Wuruk hingga keruntuhan
+                    dengan pecahnya Majapahit menjadi dua bagian, yaitu Majapahit Kulon dan Majapahit Wetan.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/sejarah/kartini.jpg">
+                  <h3>Kartini: Surat-Surat Lengkap dan Berbagai Catatan 1898-1904 - <span>Joost Cote</span></h3>
+                  <p>Hari Kartini, 21 April, setiap tahun. Di dunia, Kartini memang dikenal sebagai sosok penting dalam
+                    sejarah kemajuan perempuan, penyokong pendidikan dan emansipasi perempuan yang tak kenal lelah. Dan,
+                    untuk pertama kalinya, buku ini secara lengkap menghadirkan kumpulan artikel, memorandum, dan
+                    korespondensi asli yang ditulis oleh Kartini. Buku ini menekankan peran penting Kartini sebagai
+                    pionir gerakan nasionalis di Indonesia. Surat-surat dan petisi yang ia tulis ditujukan untuk
+                    memperjuangkan hak rakyat agar memperoleh kemerdekaan nasional, jauh sebelum rekan-rekan prianya
+                    melakukannya di hadapan publik. Kartini menggunakan tulisannya untuk memberikan edukasi kepada
+                    Belanda dan para kolonial (Belanda) perihal Jawa dan aspirasi masyarakatnya. Seandainya ia hidup
+                    lebih lama, ia pasti akan menjadi salah satu penulis terkemuka di era sebelum kemerdekaan, sekaligus
+                    juga seorang pendidik yang andal. Pada 1964, ia mendapat gelar Pahlawan Nasional dari presiden
+                    pertama Indonesia, Sukarno. Ia juga telah menjadi salah satu tokoh Asia yang terkenal dalam gerakan
+                    perempuan internasional. Buku ini merupakan hasil dari studi beberapa dekade, berdasarkan sumber
+                    arsip yang terpercaya. Selain itu, buku ini juga dilengkapi dengan pengantar dari seorang tokoh yang
+                    memiliki kewenangan dalam pembahasan tentang Kartini. Maka, buku ini bisa menjadi sumber penting
+                    bagi akademisi/peneliti juga pelajar di dunia, untuk memahami Kartini dan posisinya dalam sejarah
+                    Indonesia, yang bisa digunakan selama bertahun-tahun ke depan.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/sejarah/kpk.jpg">
+                  <h3>Kpk Berdiri Untuk Negeri - <span>Arin Swandari, Cisya Satwika, & Lilyani Harsulistyati</span></h3>
+                  <p>Menguraikan tentang sejarah awal berdiri Komisi Pemberantasan Korupsi (KPK). Awal terbentuknya KPK
+                    berasal dari idealisme untuk memberantas korupsi yang selalu gagal karena ditelikung pusat-pusat
+                    kekuasaan yang mendapatkan keuntungan dari keadaan koruptif.
+                    <br><br>
+                    Ketika langkah antikorupsi terus-menerus gagal karena ditelikung pusat-pusat kekuasaan yang mendapat
+                    keuntungan dari keadaan koruptif, KPK dibentuk dengan tekad dan cara perjuangan yang baru. Sejarah
+                    terbentuknya KPK, disajikan lengkap di dalam buku ini.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/sejarah/Salt-To-The-Sea.jpg">
+                  <h3>Salt to the Sea - <span>Ruta Sepetys</span></h3>
+                  <p>Tahun 1945. Perang Dunia II merambah Prusia Timur. Jutaan pengungsi pergi mencari tempat aman. Di
+                    antara mereka terdapat empat orang dengan kisah dan rahasia yang berbeda. Takdir mempertemukan
+                    keempatnya di Wilhelm Gustloff, kapal megah yang menjadi tempat mereka menggantungkan harapan
+                    bersama lebih dari sepuluh ribu penumpang lainnya. Tapi sebelum kebebasan sempat diraih, tragedi
+                    besar pun terjadi. Tak peduli dari negara mana mereka berasal dan status apa yang mereka sandang,
+                    ribuan penumpang kapal harus berjuang keras melakukan satu hal: bertahan hidup.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sejarah/sejarah perang dunia 1.jpg">
+                  <h3>Sejarah Lengkap Perang Dunia 1: 1914-1918- <span>Alfi Arifian</span></h3>
+                  <p>Perang Dunia I (WW1) adalah kontes gladiator terbesar sepanjang sejarah umat manusia yang
+                    melibatkan para hegemon Eropa serta koloninya. Vladimir Lenin, sang tokoh komunis Rusia yang
+                    dijuluki ‘virus’ oleh para hegemon Eropa menyebut perang ini sebagai ”perangnya bangsawan”, bukan
+                    ”perang rakyat”. Pemikirannya yang dilandasi sikap anti kaum ningrat dan prorakyat ini nantinya
+                    melahirkan gagasan berdirinya negara komunis di Rusia setelah berhasil menumbangkan dinasti penguasa
+                    Kekaisaran Rusia, Dinasti Romanov, melalui serangkaian revolusi: Revolusi Februari dan Revolusi
+                    Oktober 1917.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/sejarah/yajuj majuj.jpg">
+                  <h3>Ya’Juj&Ma’Juj: Riwayat Sang Penghancur Peradaban Bangsa - <span>Dr. Asy-Syafi Al-Mahi Ahmad</span>
+                  </h3>
+                  <p>Ya’juj dan Ma’juj telah dikenal hampir di semua peradaban dunia kuno dengan nama yang berbeda-beda.
+                    Disebut-sebut sebagai salah satu keturunan Nuh, mereka dan anak cucunya adalah sisi gelap dunia
+                    karena karakteristik dan tindakan mereka yang sangat kejam tak berperikemanusiaan, merusak,
+                    menghancurkan, dan meluluh-lantakkan banyak peradaban manusia dari era kuno hingga Abad Pertengahan.
+                    Mulai dari Yunani, Eropa, Persia, Timur Tengah, Asia Kecil, China, hingga Mesir, telah mengalami
+                    kehancuran akibat ulah mereka.
+                    <br><br>
+                    Berbeda dengan buku-buku sejenis yang hanya berdasarkan pada legenda dan dugaan-dugaan spekulatif
+                    atau sekadar mencocok-cocokkan, buku ini didasarkan pada riwayat sahih, sumber-sumber sejarah
+                    klasik, kitab-kitab suci, dan informasi dari saksi mata yang melihat langsung mereka dan perbuatan
+                    mereka. Tak hanya itu, buku ini mengungkapkan beberapa aspek tersembunyi dan laten dari kemunculan
+                    mereka ke dunia di fase-fase keluarnya, serta menyoroti ciri-ciri dan manifestasi utamanya yang
+                    membedakan mereka dari bangsa mana pun, baik di masa lalu, sekarang, maupun yang akan datang.
+
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel8" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel8" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="seniCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Seni & Desain</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color:#00adb5 ;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/Aku-Suka-Musik.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Aku Suka Musik</h5>
+                <p class="card-text">Penulis : Adi Jarot Pamungkas <br> Penerbit : Charissa Publisher <br> Tahun terbit
+                  : 2019</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/Basic_Railway fotography.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Basic Railway Photography</h5>
+                <p class="card-text">Penulis : Joko Siswanto <br> Penerbit : Elex Media Komputindo <br> Tahun terbit :
+                  2019</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/_750-Smtowns-Awesome-Facts.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SMTOWNS Awesome Facts</h5>
+                <p class="card-text">Penulis : Ara Yoo <br> Penerbit : Gramedia Widiasarana Indonesia <br> Tahun terbit
+                  : 2017</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/John_Lennon.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">John Lennon</h5>
+                <p class="card-text">Penulis : Gilbert Chocky <br> Penerbit : Nusantara CV <br> Tahun terbit : 2021</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/kumpulan lagu popn hits.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kumpulan Lagu Pop Hits</h5>
+                <p class="card-text">Penulis : Haris Hoeda <br> Penerbit : HIsteria <br> Tahun terbit : 2020</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/LITERASI_VISUA.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Literasi Visual</h5>
+                <p class="card-text">Penulis : Taufan Wijaya <br> Penerbit : Gramedia Pustka Utama <br> Tahun terbit :
+                  2018</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/piano klasik.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Piano Klasik</h5>
+                <p class="card-text">Penulis : Amazing Music <br> Penerbit : Kata Buku <br> Tahun terbit : 2019</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-9">
+            <div class="card cat-card-9" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/seni/Smartcard_Jepang.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Smartcard Jepang</h5>
+                <p class="card-text">Penulis : Rukmono Danang Nugroho <br> Penerbit : Charissa Publisher <br> Tahun
+                  terbit : 2022</p>
+                <a href="#seniRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-9">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="seniRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img9">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/sejarah/china.jpg" alt="testi img9">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel9" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/seni/Aku-Suka-Musik.jpg">
+                  <h3>Aku Suka Musik - <span>Adi Jarot Pamungkas</span></h3>
+                  <p>Buku ini berisi tentang teori musik, sejarah musik, fakta seputar musik, teori dasar musik untuk
+                    umum, hingga panduan lengkap belajar membaca not balok dan not angka. Dengan begitu, buku ini berisi
+                    mengenai materi musik secara lengkap dan terpadu. Disasarkan untuk pelajar dan umum.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/seni/Basic_Railway fotography.jpg">
+                  <h3>Basic Railway Photography - <span>Joko Siswanto</span></h3>
+                  <p>Railway photography bisa dikatakan sebuah genre fotografi yang berakar dari aktivitas railfanning.
+                    Orang yang menyukai kereta api disebut dengan Railfans. Aktivitas railfaning sendiri sangat beragam,
+                    mulai dari naik kereta api untuk tujuan kesenangan (joyride), mengoleksi miniatur kereta api,
+                    mengoleksi visual kereta api baik berupa foto maupun video. Bahkan, tak sedikit Railfans yang
+                    menggeluti dunia fotografi kereta api. Point Of Interest atau yang biasa disebut dengan POI adalah
+                    titik utama pada sebuah foto atau bisa dikatakan inti cerita pada sebuah foto. POI pada railway
+                    photography biasanya terletak pada kereta api itu sendiri, umumnya pada bagian lokomotif atau bagian
+                    depan kereta api. Sebagian besar aktivitas railway photography memang atas dasar kesenangan.
+                    Railfans yang menekuni hobi ini juga sering melakukan foto sharing melalui dunia maya maupun nyata.
+                    Railway photography juga bisa menuliskan catatan sejarah jagat perkereta-apian yang pernah ada.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/seni/_750-Smtowns-Awesome-Facts.jpg">
+                  <h3>750 Smtown’s Awesome Facts - <span>Ara Yoo</span></h3>
+                  <p>Pastinya hampir semua fans K-pop tahu dong sama agensi super populer SM Entertainment. Ya, rumahnya
+                    BoA, TVXQ, Super Junior, Girls’Generation, Shinee, f(x), EXO, Red Velvet, dan NCT, ini merupakan
+                    salah satu dari tiga top agensi di Korea Selatan. SM telah melejitkan grup legendaris era 90-an yang
+                    menjadi cikal bakal grup idol seperti HOT, SES, dan Shinhwa. SM bahkan sering disebut sebagai salah
+                    satu pelopor gelombang Hallyu di Asia dan dunia. Wow, cool banget ya! Nah, sekarang kita mau
+                    membeberkan fakta-fakta seru soal SMTOWN. Enggak cuma fakta-fakta seputar SM Entertainment, tapi
+                    juga fakta-fakta soal BoA, TVXQ, Super Junior, Girls’Generation, Shinee, f(x), EXO, Red Velvet, dan
+                    adik seperguruan terbaru NCT. Yang lebih keren lagi kita bakalan bahas 750 fakta all about SMTOWN.
+                    Check it out!!
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/seni/John_Lennon.jpg">
+                  <h3>JOHN LENNON - <span>Gilbert Choky</span></h3>
+                  <p>Bersama The Beatles, John Lennon berhasil mencetak banyak lagu hits dan mencapai popularitas
+                    tertinggi dalam dunia musik. Namun dia juga menjadi kontroversi. Dia pernah berkata bahwa The
+                    Beatles lebih populer daripada Yesus Kristus. Pernyataan ini membuat band tersebut dicekal di
+                    radio-radio. Album-album mereka pun dibakar oleh orang-orang yang tidak menyukai pernyataan yang
+                    melukai kaum Kristiani tersebut. John akhirnya meminta maaf di hadapan publik walaupun dia mengakui
+                    bahwa pernyataan itu hanyalah kelakar. Perjalanan John Lennon bersama The Beatles berhenti pada
+                    tahun 1970. The Beatles bubar, dan John memilih untuk berkarier solo. Warga dunia lalu mengenalnya
+                    sebagai musisi sekaligus aktivis perdamaian. Dia mewujudkan pemikirannya perihal dunia yang damai
+                    melalui lagu-lagu semisal “Give Peace a Chance” dan “Imagine”. Hingga saat ini kedua lagu tersebut
+                    menjadi simbol Gerakan perdamaian.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/seni/kumpulan lagu popn hits.jpg">
+                  <h3>Kumpulan Lagu Pop Hits - <span>Haris Hoeda</span></h3>
+                  <p>Perkembangan musik di tanah air sudah tidak terbendung dengan didukung dengan masuknya musik-musik
+                    dari seluruh penjuru dunia. Bagi para pemusik pemula, keterbatasan buku yang menyuguhkan kompilasi
+                    lagu-lagu terkini bisa dibilangjarangadanya. Banyak lagu menarik yang dapat dilihat dalam buku ini
+                    sembari dijadikan referensi bagi pemusik-pemusik yang hobi bergitar atau mengiringi vokal dengan
+                    keyboard dan sebagainya.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a" data-img="image/seni/LITERASI_VISUA.jpg">
+                  <h3>Literasi Visual - <span>Taufan Wijaya</span></h3>
+                  <p>"Buku Taufan memberikan contoh konkret dan pengertian sederhana tentang literasi visual yang
+                    mungkin masih asing bagi kita. Tapi itu sangat penting karena kita melakukan pendokumentasian secara
+                    visual yang didalamnya ada sebuah bahasa. Semakin kita mengerti visual literasi, semakin kita pandai
+                    berkomunikasi. Dan kekuatan visual bisa membawa pada sebuah perubahan." - Anton Ismael
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a" data-img="image/seni/piano klasik.jpg">
+                  <h3>Piano Klasik Level 1 Untuk Pemula - <span>Amazing Music</span></h3>
+                  <p>Buku ini berisi lagu-lagu piano klasik yang merupakan lagu-lagu standar untuk tahapan awal belajar
+                    bermain piano. Berisi lagu-lagu lengkap untuk tahap awal belajar bermain piano. Jika kamu ingin bisa
+                    berlatih memainkan lagu-lagu piano klasik untuk tahapan pemula. Langsung aja koleksi seri buku Piano
+                    Klasik ini.
+                    <br><br>
+                    Buku ini juga disertai dengan not angka dan not balok sehingga sangat membantu sekali bagi Pemula
+                    yang ingin belajar. Buku ini dikemas dengan spiral sehingga akan sangat memudahkan pemain ketika
+                    membaca partitur disaat bermain piano.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/seni/Smartcard_Jepang.jpg">
+                  <h3>Smartcard Jepang - <span>Rukmono Danang Nugroho</span>
+                  </h3>
+                  <p>Apa yang menyebabkan Pangeran Diponegoro melawan takhta Mataram hingga memicu perang besar dalam
+                    sejarah Jawa sebagai "Perang Jawa 1825-1830"? Apa pula yang menyebabkan beberapa pengikut Diponegoro
+                    satu per satu menyerahkan diri kepada pihak asing (VOC)? Apa alasan sang pangeran—pada
+                    akhirnya—menyerahkan diri hingga dibuang ke Makassar?
+                    <br><br>
+                    Siapakah Pangeran Diponegoro, yang sosoknya dimitoskan sebagai 11 messiah" dari tanah Jawa, dan
+                    menginspirasi perang kemerdekaan dalam Masa Revolusi Fisik di kemudian hari?
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel9" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel9" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-margin pt-5" id="sosCat">
+      <div class="container ">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="headingCate"><a href="#" class="cate">Sosial & Politik</a></h5>
+          </div>
+        </div>
+        <div class="row book-catalog mt-4 rounded-2" style="background-color: #d9d9d9;">
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/Bhayangkara Polantas.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bhayangkara Polantas</h5>
+                <p class="card-text">Penulis : Mega Tetuko, S. I. K., MH <br> Penerbit : Buku Litera <br> Tahun terbit :
+                  2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/biografi nafsiah mboi.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Biografi Nafsiah Mboi</h5>
+                <p class="card-text">Penulis : Agung Adiprasetyo <br> Penerbit : PBK <br> Tahun terbit : 2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/Indonesia_X-Files.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Indonesia X-Files</h5>
+                <p class="card-text">Penulis : dr. Abdul Mun'im Idries, Sp.F. <br> Penerbit : Noura Books Publishing
+                  <br> Tahun terbit : 2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/Islam_Pancasila_dan_Geliat.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Islam Pancasila</h5>
+                <p class="card-text">Penulis : M Alfan Alfian <br> Penerbit : Penjuru Ilmu <br> Tahun terbit : 2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/sapiens.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sapiens</h5>
+                <p class="card-text">Penulis : Yuval Noah Harari <br> Penerbit : Kepustakaan Populer Gramedia <br> Tahun
+                  terbit : 2017</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/Jalan_Presisi_Kapolri_.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jalan Presisi Kapolri</h5>
+                <p class="card-text">Penulis : Farouk Arnaz<br> Penerbit : Cv. Madani Berkah Abadi <br> Tahun terbit :
+                  2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3  col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/MANUSIA_DALAM_KEMELUT_SEJARAH.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Manusia Dalam Kemelut Sejarah</h5>
+                <p class="card-text">Penulis : Taufik Abdullah <br> Penerbit : PLp3es <br> Tahun terbit : 2022</p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mx-auto my-3 cat-wrap-10">
+            <div class="card cat-card-10" style="width: 18rem;">
+              <div class="img-box d-flex justify-content-center align-items-center">
+                <img src="image/sosial/Sang_Penggerak_Nahdlatul_Ulama.jpg" width="75%" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sang Penggerak NU</h5>
+                <p class="card-text">Penulis : Safrizal Rambe <br> Penerbit : Madani Institut <br> Tahun terbit : 2022
+                </p>
+                <a href="#sosRev" class="btn tombol-1">Read Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-load text-center mt-2 load-more-10">
+          <a href="" class="btn "> Load More </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section d-flex align-items-center mt-2 mt-sm-2" id="sosRev">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testi-img10">
+            <div class="img-box">
+              <div class="circle mt-1 mt-sm-1"></div>
+              <div class="img-box-inner mt-1 mt-sm-1">
+                <img src="image/sosial/Bhayangkara Polantas.jpg" alt="testi img10">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div id="myCarousel10" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item testi-item active" data-color="#fb9c9a"
+                  data-img="image/sosial/Bhayangkara Polantas.jpg">
+                  <h3>Bhayangkara Polantas - <span>MEGA TETUKO, S. I. K., MH</span></h3>
+                  <p>Polisi Lalu Lintas memiliki peran melaksanakan tugas kepolisian di bidang lalu lintas yang meliputi
+                    kegiatan dalatn pengendalian lalu lintas untuk mencegah segala bentuk gangguan serta ancaman agar
+                    terjamin keamanan, keselamatan, ketertiban dan kelancaran lalu lintas di jalan raya. Selain itu
+                    Polisi Lalu Lintas juga berperan melaksanakan tugas layanan publik baik registrasi dan identifikasi
+                    kendaraan bermotor maupun pengemudi. Seiring dengan perkembangan zaman, teknologi, dan dengan adanya
+                    dinamika tugas yang sangat kompleks, para personel Polisi Lalu Lintas harus mampu memantaskan diri
+                    untuk menjawab tantangan ke depan. Berbagai macam hal harus dipersiapkan agar masalah keamanan,
+                    keselamatan, ketertiban, dan kelancaran di jalan, serta peningkatan kualitas pelayanan publik
+                    mendapatkan solusi. Polisi Lalu Lintas harus tetap dekat dengan masyarakat, berinovasi, meningkatkan
+                    kemampuan, semata-mata untuk melayani masyarakat.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/sosial/biografi nafsiah mboi.jpg">
+                  <h3>Biografi Nyanyian Kehidupan Nafsiah Mboi - <span>Agung Adiprasetyo & Maria Hartiningsih</span>
+                  </h3>
+                  <p>Setiap tokoh dilahirkan oleh suatu kurun masa. Namun zaman segera disapu oleh waktu dan setiap
+                    peristiwa dengan cepat dilupakan karena tertimbun peristiwa-peristiwa yang susul-menyusul memenuhi
+                    ruang publik dan meram-pas ingatan.
+                    <br><br>
+                    Meski demikian, suatu bangsa menjadi besar bila mau mengingat dan mengakui jasa para pahlawannya;
+                    termasuk di antaranya adalah para tokoh dan birokrat yang bekerja keras memajukan suatu wilayah dan
+                    masyarakat. Di antara mereka adalah dr. Andi Nafsiah Walinono-Mboi SpA, MPH, dikenal sebagai Nafsiah
+                    Mboi.
+                    <br><br>
+                    Untuk waktu yang cukup panjang, namanya selalu disandingkan dengan sang suami, dr. Ben Mboi.
+                    Pasangan ini telah membuat NTT mencuat di antara provinsi-provinsi lain di Indonesia karena lonjakan
+                    kemajuan kesejahteraan warganya. Pres-tasi keduanya di bidang pelayanan publik diakui secara
+                    internasional dengan peng-hargaan Ramon Magsaysay Award pada tahun 1986.
+                    <br><br>
+                    Namun Nafsiah juga punya jejak tersendiri. Perjalanannya panjang dan berliku sebelum menjabat
+                    sebagai Menteri Kesehatan (2012-2014). Nafsiah adalah perem-puan pertama dari suku Bugis, Makasar
+                    yang menjadi dokter dan dokter spesialis anak; dan untuk NTT, dokter spesialis anak pertama yang
+                    melayani rakyat di sana.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sosial/Indonesia_X-Files.jpg">
+                  <h3>Indonesia X-Files - <span>dr. Abdul Mun'im Idries, Sp.F</span></h3>
+                  <p>“Kamu gila. Ngelawan arus. Pulang tinggal nama entar.”
+                    <br><br>
+                    Begitu komentar kolega dr. Abdul Mun’im Idries, ketika pada akhir 1993, dokter forensik ini berani
+                    menjadi saksi ahli kasus pembunuhan Marsinah. Kala itu, santer diyakini sang pejuang buruh dihabisi
+                    oknum militer. Pada era militer paling ditakuti karena penculikan senyapnya, berani-beraninya Mun’im
+                    mengusik tentara.
+                    <br><br>
+                    Apa pula yang dihadapi Mun’im dan fakta apa yang ia temukan ketika harus terjun pada detik-detik
+                    mencekam Tragedi Trisakti dan Tragedi Semanggi? Bagaimana analisis forensiknya terkait pembunuhan
+                    Munir, Tragedi Tanjung Priok, Tragedi Beutong Ateuh, dan sebagainya?
+                    <br><br>
+                    Dalam Indonesia X-Files, Mun’im membongkar arsip, membeberkan fakta-fakta mengejutkan, mengungkap
+                    rahasia terkait sejumlah nama tabu. Dia juga berbagi kisah dan metode kedokteran forensik dalam
+                    membongkar kriminalitas dan kejahatan di negeri ini.
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sosial/Islam_Pancasila_dan_Geliat.jpg">
+                  <h3>Islam, Pancasila, dan Geliat Demokrasi di Indonesia - <span>M Alfan Alfian</span></h3>
+                  <p>ERA REFORMASI di Indonesia yang telah berjalan lebih dari dua dekade sejak 19948, telah
+                    menggambarkan dinamika kontestasi politik populis ingar-bingar di tengah demokrasi yang menggeliat,
+                    Buku ini memuat ragam tulisan yang memotret dinamika kepolitikan umat Islam, yang bergumul di antara
+                    kekuatan-kekuatan politik yang saling bersaing dan bersanding;dipenuhi ragam kepuasan, pun
+                    kekecewaan. Partai-partai politik yang bergulat di legisiatif dan pemerintahan, seringkali tidak
+                    sejalan dengan arus pendapat aneka kelompok kepentingan. Hadirnya kelompok-kelompok penekan yang
+                    vokal di ranah yang penuh jargon dan simbol, menambah ramainya kepolitikan tanah air. Di tengah
+                    kondisi demikian, muncul kembali isu kontraproduktif dan ahistoris Islam versus Pancasila. Wajah
+                    kepolitikan Indonesia pun tak luput dari resultan kontestasi populis, menguatnya politik identitas,
+                    hingga tajamnya polarisasi di jagat digital. Demokrasi akan terus menggeliat, disesaki ragam isu
+                    kontestatif. Itu semua, akan terus menjadi bahan pengamatan, bagaimana demokrasi menggeliat di
+                    negara berpenduduk Muslim terbesar. Diberi Pengantar memikat oleh Fachry All, buku Ini mengulas
+                    isu-isu Keislaman dan Keindonesiaan, termasuk ragam tokoh pemberi warna khasanah bangsa.
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="image/sosial/sapiens.jpg">
+                  <h3>Sapiens - <span>Yuval Noah Harari</span></h3>
+                  <p>SELAMA dua setengah juta tahun, berbagai spesies manusia hidup dan punah di Bumi, sampai akhirnya
+                    tersisa satu, Homo sapiens, Manusia Bijaksana, sejak seratusan ribu tahun lalu. Namun spesies ini
+                    bisa menyebar ke seluruh dunia dan beranak-pinak hingga berjumlah 7 miliar, dan kini menjadi
+                    kekuatan alam yang dapat mengubah kondisi planet. Apa penyebabnya?
+                    <br><br>
+                    Sapiens membahas sisi yang tak banyak diungkit buku sejarah atau evolusi manusia lain: bagaimana
+                    manusia berangkat dari sekadar satu spesies hewan menjadi makhluk berperadaban, melalui tiga
+                    revolusi—Kognitif, Pertanian, dan Sains. Telusuri peran bahasa, pertanian, sampai gosip dan fiksi
+                    dalam kesuksesan manusia, juga arti kebahagiaan manusia dan ujung riwayat spesies kita.
+                    <br><br>
+                    “Menarik dan provokatif... membuat kita sadar bahwa kita baru sebentar hadir di Bumi ini, bahwa
+                    pertanian dan sains baru-baru saja ada, dan sebaiknya kita jangan menganggap enteng semua itu.” -
+                    Presiden Barack Obama
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fbd39a"
+                  data-img="image/sosial/Jalan_Presisi_Kapolri_.jpg">
+                  <h3>Jalan Presisi Kapolri: Aksi, Refleksi, Pandemi - <span>Farouk Arnaz dan Ilham Wancoko</span></h3>
+                  <p>Setahun sudah Jenderal Listyo Sigit Prabowo duduk di kursi Kapolri sejak dilantik oleh Presiden
+                    Joko Widodo pada 27 Januari 2021 lalu. Sejumlah keberhasilan dan prestasi serta sejumlah peristiwa
+                    penting juga telah terjadi di 365 hari masa kepemimpinan Sigit yang menjabat sebagai Kapolri ke-26
+                    ini. Namun, tak semua peristiwa itu—tentu saja—bernada positif. Buku independen ini berupaya
+                    memotret hal itu dan menampung harapan-harapan dari sejumlah tokoh dan orang hebat tentang Sigit.
+                    <br><br>
+                    Meski bukan dimaksudkan buku yang berisi puja-puji kepada Sigit, namun tulisan-tulisan itu telah
+                    menunjukan bahwa telah ada yang dilakukan Sigit dalam setahun kepemimpinannya. Ia telah mendapatkan
+                    pengakuan dari apa yang seharusnya didapatkan : kepercayaan dan harapan. Sigit menjanjikan harapan
+                    besar bahwa ia mampu menghadirkan perbaikan dan perubahan di tubuh kepolisian seperti konsep Presisi
+                    yang didengungkannya, yang menjadi jargonnya. Bukan sekadar Kapolri baru, tapi ini baru Kapolri.
+                    <br><br>
+                    Buku ini—yang merupakan sekuel pertama— juga dilengkapi wawancara dengan Sigit, survei bekerjasama
+                    dengan Paramadina Public Policy Institute, dan kegiatan-kegiatan penting Sigit di tahun pertamanya.
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#fb9c9a"
+                  data-img="image/sosial/MANUSIA_DALAM_KEMELUT_SEJARAH.jpg">
+                  <h3>Manusia dalam Kemelut Sejarah - <span>Taufik Abdullah, Aswab Mahasin, Daniel Dhakidae</span></h3>
+                  <p>...Lebih dari dulu-dulu, Prisma kali ini menyuguhi pembacanya tulisan-tulisan yang ... prima!
+                    Mereka dari angkatan tua akan menemukan banyak hal yang tak mungkin mereka duga, sedang yang
+                    muda-muda akan segera memahami apa sesungguhnya yang mencekam negeri ini sampai detik ini juga.
+                    <br><br>
+                    Kompas, 7 September 1977
+                    <br><br>
+                    ... Melukiskan secara seimbang pribadi-pribadi Sukarno, Sjahrir, Amir Sjarifudin dan lain-lain...
+                    sebagai tanda timbulnya kesadaran baru di kalangan masyarakat kita
+                    <br><br>
+                    Sinar Harapan, 20 September 1977
+
+
+                  </p>
+                </div>
+                <div class="carousel-item testi-item" data-color="#9ab0fb"
+                  data-img="image/sosial/Sang_Penggerak_Nahdlatul_Ulama.jpg">
+                  <h3>Sang Penggerak Nahdlatul Ulama - <span>SAFRIZAL RAMBE</span>
+                  </h3>
+                  <p>KH. Abdul Wahab Hasbullah (1888 – 1971) adalah tokoh penting dari kalangan Nahdlatul Ulama yang
+                    memiliki peran dan kiprah besar dalam sejarah kebangkitan nasional Indonesia sejak periode kolonial
+                    pada awal abad ke-20, sampai dengan terbentuknya negara Republik Indonesia. Riwayat ringkasnya
+                    menunjukkan peran penting seorang tokoh yang membawa nilai-nilai kebangsaan yang modern dan humanis
+                    kedalam lingkungan ulama dan santri di Indonesia.
+                    <br><br>
+                    Inisiatifnya membentuk Tashwirul Afkar (Pergolakan Pemikiran) pada 1914 adalah bukti pandangan
+                    pribadinya terhadap kemajuan dan modernisme sebagai unsur penting dalam kemajuan Islam di Indonesia
+                    (khususnya kalangan ulama dan santri di perdesaan). Dua tahun kemudian, beliau membentuk organisasi
+                    pemuda Nahdlatul Wathan (Kebangkitan Tanah Air) dan awal tahun 1920-an membentuk Sjubbanul Wathan
+                    (Pemuda Tanah Air) yang melalui pembentukan dua organisasi ini semakin menegaskan kombinasi antara
+                    gagasan keagamaan dan kebangsaan yang membentuk kepribadian KH. Abdul Wahab Hasbullah dalam periode
+                    awal abad ke-20. Saat yang bersamaan Kyai Wahab juga membentuk organisasi Nahdlatul Tujar, sebuah
+                    organisasi yang mendorong tumbuhnya entrepreneurship di kalangan pedagang-pedagang pribumi agar
+                    dapat meningkatkan kesejahateraan kaum pribumi pada umumnya.
+
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel10" data-bs-slide="prev">
+                <img src="image/icons/left-arrow.png" alt="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel10" data-bs-slide="next">
+                <img src="image/icons/right-arrow.png" alt="prev">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+
+    <section class="profile-area" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="conHead">Librarian</h1>
+            <p class="conSubHead">----</p>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="card kartu-propil">
+              <div class="img1"> <img src="image/backgorund.jpg" alt=""> </div>
+              <div class="img2"> <img src="image/foto-iky.jpeg" alt=""> </div>
+              <div class="main-text">
+                <h2> Achmad Wahyu Nur Rizky</h2>
+                <p>K3521002</p>
+              <div class="socials">
+                <a href="https://www.instagram.com/" class=""><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/" class=""><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/?lang=en" class=""><i class='bx bxl-twitter'></i></a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="card kartu-propil">
+              <div class="img1"> <img src="image/backgorund.jpg" alt=""> </div>
+              <div class="img2"> <img src="image/foto-ata.jpeg" alt=""> </div>
+              <div class="main-text">
+                <h2> Atadila Berliani Daniswara</h2>
+                <p>K3521074</p>
+              <div class="socials">
+                <a href="https://www.instagram.com/" class=""><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/" class=""><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/?lang=en" class=""><i class='bx bxl-twitter'></i></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="conHead">Contact Us</h1>
+            <p class="conSubHead">We serve you the great book all the time</p>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-lg-6 text-center">
+            <img src="image/contact-1.jpg" class="img-fluid rounded-2" style="width: 90%;" alt="">
+          </div>
+          <div class="col-lg-6 mt-3">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+              <!-- Name input -->
+              <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+              </div>
+
+              <!-- Email address input -->
+              <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                  data-sb-validations="required, email" />
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.
+                </div>
+              </div>
+
+              <!-- Message input -->
+              <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+                  data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+              </div>
+
+              <!-- Form submissions success message -->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">Form submission successful!</div>
+              </div>
+
+              <!-- Form submissions error message -->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+              </div>
+
+              <!-- Form submit button -->
+              <div class="d-grid">
+                <button class="btn btn-lg disabled" id="submitButton" type="submit">Submit</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="container pt-3 rounded-2">
+      <div class="row row-content ">
+        <div class="col-md-6">
+          <h1 class="name-fot mb-2">LLC-LIBRARY</h1>
+          <p class="text-fot">Is the best place to read a Book</p>
+        </div>
+        <div class="col-md-3 mt-4 mt-sm-0">
+          <h3 class="mb-3 name-fot">Navigation</h3>
+          <ul class="nav-fot p-0">
+            <li><a href="#" class="list-fot" id="">HOME</a></li>
+            <li class="mt-2"><a href="#categories" class="list-fot" id="">Categories</a></li>
+            <li class="mt-2"><a href="#agamaCat" class="list-fot" id="">Catalog</a></li>
+            <li class="mt-2"><a href="#agamaRev" class="list-fot" id="">Review</a></li>
+            <li class="mt-2"><a href="#contact" class="list-fot" id="">Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 mt-sm-0 mt-4">
+          <h3 class="mb-3 name-fot">Company</h3>
+          <a href="https://gmail.google.com/inbox/" class="fot-email" id="email">llc_library@gmail.com</a>
+          <p class="text-fot mt-2">Surakarta-Jawa Tengah, Indonesia</p>
+        </div>
+      </div>
+      <div class="row row-copy pt-3">
+        <div class="col-md-6 text-center text-sm-center text-lg-center">
+          <p>&copy; 2022 Library. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-sm-center text-center text-lg-center">
+          <a href="https://www.instagram.com/" class="icon-fot" id=""><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.facebook.com/" class="icon-fot" id=""><i class='bx bxl-facebook'></i></a>
+          <a href="https://web.whatsapp.com/" class="icon-fot" id=""><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://twitter.com/?lang=en" class="icon-fot" id=""><i class='bx bxl-twitter'></i></a>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  
+  <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/javascript.js"></script>
+
+
+
+</body>
+
+</html>
